@@ -11,10 +11,5 @@ Hello!
 
 
 
-你可以通过以下的方式联系到我：  
-    **Telegram**：https://t.me/linyuxuanlin  
-    **GitHub**：https://github.com/linyuxuanlin  
-    **WeChat**：linyuxuanlin  
-
 
 
