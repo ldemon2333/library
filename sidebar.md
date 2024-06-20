@@ -20,10 +20,6 @@
   * [AD 入门系列二：基础知识](post/电路设计/AD入门系列二：基础知识.md)
   * [AD 入门系列三：原理图绘制](post/电路设计/AD入门系列三：原理图绘制.md)
   * [AD 入门系列四：PCB 绘制](post/电路设计/AD入门系列四：PCB绘制.md)
-  * [AD 入门系列五：库文件绘制](post/电路设计/AD入门系列五：库文件绘制.md)
-  * [自制 CMSIS-DAP](post/电路设计/自制CMSIS-DAP.md)
-  * [PCB 名片设计](post/电路设计/PCB名片设计.md)
-  * [焊接比赛：培训及总结](post/电路设计/焊接比赛：培训及总结.md)
 * **无人机**
   * [N3 参数调试](post/无人机/N3参数调试.md)
 * **产品经理**
@@ -153,5 +149,4 @@
 * [![](https://icongr.am/feather/code.svg?size=16&color=808080)OceanEye's Blog](http://blog.oceaneye.moe/)
 * [![](https://icongr.am/feather/code.svg?size=16&color=808080)WAI Tech Group](http://waitech.cn)
 * [![](https://icongr.am/feather/code.svg?size=16&color=808080)BOBI83](https://bobi.site/)
-
 
