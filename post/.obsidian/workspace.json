@@ -1,0 +1,158 @@
+{
+  "main": {
+    "id": "287f9f9fc40b23c4",
+    "type": "split",
+    "children": [
+      {
+        "id": "6a4d4eb42ab1ea46",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "25025a47abbabb26",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OS/Linux命令.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dd0bc266df5e835c",
+    "type": "split",
+    "children": [
+      {
+        "id": "eaadc545fdbaf05b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8c9343997cbadb79",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fdf12d581f9e1015",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fa298c5ace632ebf",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a33121b590b5fe07",
+    "type": "split",
+    "children": [
+      {
+        "id": "0d352b99119a5454",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7b034a675d02ef5a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "OS/Linux命令.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "433b0bf351ce6c6f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "OS/Linux命令.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4de8c3380c789192",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "52c9e9a1b440d852",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "OS/Linux命令.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "25025a47abbabb26",
+  "lastOpenFiles": [
+    "OS/Makefile.md",
+    "OS/Linux命令.md",
+    "vim学习/vim.md",
+    "2024-06-21.md",
+    "OS/compile.md",
+    "OS/绪论.md"
+  ]
+}

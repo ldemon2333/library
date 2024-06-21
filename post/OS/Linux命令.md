@@ -32,7 +32,7 @@ The `rm` (remove) command is the most commonly used command to delete files in L
 
 1. **Delete a single file**:
 
-   ```sh
+	```sh
    rm filename.txt
    ```
 
@@ -55,8 +55,6 @@ The `rm` (remove) command is the most commonly used command to delete files in L
    - The `-f` (force) option forces the deletion without prompting for confirmation.
 
 ---
-
-
 
 # 新建一个文件
 
