@@ -24,7 +24,7 @@
 
 
 
-	# rm命令
+# rm命令
 
 ### Using the `rm` Command
 
