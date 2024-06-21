@@ -11,7 +11,9 @@
 
 + **脑科学**
      + [绪论](post/BrainScience/绪论.md)
-     + 第一章 基础
-       + [1.1基础](post/BrainScience/1.md)
-       + [1.2神经元与神经递质](post/BrainScience/2.md)
-     + 第二章
+     
+     + [1.1基础](post/BrainScience/1.md)
+     
+     + [1.2神经元与神经递质](post/BrainScience/2.md)
+     
+       
