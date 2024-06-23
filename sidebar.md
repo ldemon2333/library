@@ -2,7 +2,7 @@
 ---
 * **数学**
   * Linear Algebra
-    * [Unit I：Ax=b and the Four Subspaces](post/Linear Algebra/unit1.md)
+    * [Unit I：Ax=b and the Four Subspaces](post/LinearAlgebra/unit1.md)
     * 
 * **Linux**
   * [Linux命令](post/OS/Linux命令.md)
