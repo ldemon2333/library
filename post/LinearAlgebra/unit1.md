@@ -31,14 +31,14 @@ $$
 $$
 x
 \begin{bmatrix}
-	\begin{array}{r}
+	\begin{array}{c}
 		2 \\
 		-1  
 	\end{array}
 \end{bmatrix}
 +y
 \begin{bmatrix}
-\begin{array}{r}
+\begin{array}{c}
 -1\\
 2
 \end{array}

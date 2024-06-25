@@ -467,10 +467,89 @@ false ; echo "This will always run"
 
 Another common pattern is wanting to get the output of a command as a variable. This can be done with *command substitution*. Whenever you place `$( CMD )` it will execute `CMD`, get the output of the command and substitute it in place. For example, if you do `for file in $(ls)`, the shell will first call `ls` and then iterate over those values. A lesser known similar feature is *process substitution*, `<( CMD )` will execute `CMD` and place the output in a temporary file and substitute the `<()` with that file’s name. This is useful when commands expect values to be passed by file instead of by STDIN. For example, `diff <(ls foo) <(ls bar)` will show differences between files in dirs `foo` and `bar`.
 
-Since that was a huge information dump, let’s see an example that showcases some of these features. It will iterate through the arguments we provide, `grep` for the string `foobar`, and append it to the file as a comment if it’s not found.
+下面是关于命令替换（*command substitution*）和进程替换（*process substitution*）的详细说明和示例：
+
+### 命令替换（Command Substitution）
+
+命令替换用于执行命令并将其输出作为变量或参数。在 Bash 中，命令替换可以使用 `$()` 语法来实现。
+
+#### 示例
+
+```sh
+# 获取当前目录的文件列表并存储在变量中
+files=$(ls)
+echo "当前目录的文件：$files"
+
+# 使用命令替换在for循环中迭代文件
+for file in $(ls); do
+    echo "文件：$file"
+done
+```
+
+在上面的示例中，`$(ls)` 会执行 `ls` 命令，并将输出替换到相应的位置。
+
+### 进程替换（Process Substitution）
+
+进程替换用于将命令的输出放置在一个临时文件中，并将该文件的名称替换到相应的位置。进程替换使用 `<( CMD )` 语法。
+
+#### 示例
+
+假设有两个目录 `foo` 和 `bar`，我们希望比较这两个目录中的文件差异：
+
+```sh
+# 使用进程替换来比较两个目录的文件差异
+diff <(ls foo) <(ls bar)
+```
+
+在这个示例中，`<(ls foo)` 和 `<(ls bar)` 分别会执行 `ls foo` 和 `ls bar` 命令，并将它们的输出放到临时文件中，然后 `diff` 命令比较这两个临时文件的内容。
+
+### 详细示例
+
+#### 命令替换示例
 
 ```sh
 #!/bin/bash
+
+# 获取当前日期和时间
+current_date=$(date)
+echo "当前日期和时间：$current_date"
+
+# 获取系统的主机名
+hostname=$(hostname)
+echo "主机名：$hostname"
+```
+
+#### 进程替换示例
+
+假设有两个文件 `file1.txt` 和 `file2.txt`，我们希望使用 `diff` 比较这两个文件的内容：
+
+```sh
+#!/bin/bash
+
+# 创建示例文件
+echo "This is file1" > file1.txt
+echo "This is file2" > file2.txt
+
+# 使用进程替换比较文件
+diff <(cat file1.txt) <(cat file2.txt)
+```
+
+### 使用场景
+
+1. **命令替换**：
+   - 在脚本中获取命令输出并作为变量使用。
+   - 在循环中迭代命令输出。
+   
+2. **进程替换**：
+   - 当命令期望从文件而不是标准输入读取时使用。
+   - 比较两个命令的输出，例如目录列表或文件内容。
+
+Since that was a huge information dump, let’s see an example that showcases some of these features. It will iterate through the arguments we provide, `grep` for the string `foobar`, and append it to the file as a comment if it’s not found.
+
+```sh
+#!/bin/bash 
+
+# 第一行是Shebang，告诉OS使用/bin/bash解释器来执行脚本。
 
 echo "Starting program at $(date)" # Date will be substituted
 
@@ -478,6 +557,9 @@ echo "Running program $0 with $# arguments with pid $$"
 
 for file in "$@"; do
     grep foobar "$file" > /dev/null 2> /dev/null
+    #这行代码使用 grep 命令在指定的文件中搜索字符串 foobar，并将标准输出（STDOUT）和标准错误（STDERR）都重定向
+    #到/dev/null，即丢弃输出。这意味着不管 grep 找到还是没有找到 foobar，输出都不会显示在终端上。
+    
     # When pattern is not found, grep has exit status 1
     # We redirect STDOUT and STDERR to a null register since we do not care about them
     if [[ $? -ne 0 ]]; then
@@ -531,7 +613,7 @@ for arg in reversed(sys.argv[1:]):
     print(arg)
 ```
 
-The kernel knows to execute this script with a python interpreter instead of a shell command because we included a [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) line at the top of the script. It is good practice to write shebang lines using the [`env`](https://www.man7.org/linux/man-pages/man1/env.1.html) command that will resolve to wherever the command lives in the system, increasing the portability of your scripts. To resolve the location, `env` will make use of the `PATH` environment variable we introduced in the first lecture. For this example the shebang line would look like `#!/usr/bin/env python`.
+The kernel knows to execute this script with a python interpreter instead of a shell command because we included a [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) line at the top of the script. It is good practice to write shebang lines using the [`env`](https://www.man7.org/linux/man-pages/man1/env.1.html) command that will resolve to wherever the command lives in the system, increasing the portability of your scripts. 
 
 Some differences between shell functions and scripts that you should keep in mind are:
 
