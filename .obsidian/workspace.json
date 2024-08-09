@@ -1,0 +1,193 @@
+{
+  "main": {
+    "id": "df7504f1abc8d0cf",
+    "type": "split",
+    "children": [
+      {
+        "id": "0e9ed0ace03c6935",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "538ea9f4c3417f42",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dc8a2092a802faa4",
+    "type": "split",
+    "children": [
+      {
+        "id": "95e76b534db64e92",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "72970718fde73702",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "88883de595a87bb5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a19506806e187b49",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1aaefe1a03615f71",
+    "type": "split",
+    "children": [
+      {
+        "id": "cd066dff498cb7a3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "80d7e6e689be4c21",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fbdfecf9cc3bd95a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7121133c55b3371a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "722bc67affe9c8a5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false
+    }
+  },
+  "active": "538ea9f4c3417f42",
+  "lastOpenFiles": [
+    "sidebar.md",
+    "post/MITmissingSemester/Debugging and Profiling.md",
+    "未命名.md",
+    "Log/2024-08-09.md",
+    "post/Git/2.1 Git 基础 - 获取 Git 仓库.md",
+    "post/MITmissingSemester/Git.md",
+    "Log/2024-07-17.md",
+    "post/LinearAlgebra/Unit I/1.11.md",
+    "post/数据结构/单调栈.md",
+    "post/数据结构/二分.md",
+    "Log/2024-07-16.md",
+    "Log/2024-07-14.md",
+    "post/Python/CS61a/第二章：使用数据构建抽象/2.1 引言.md",
+    "post/LinearAlgebra/Unit I/1.10.md",
+    "post/LinearAlgebra/Unit I/1.9.md",
+    "post/LinearAlgebra/Unit I/1.7 Column Space and Nullspace.md",
+    "post/Git/images/Pasted image 20240716135928.png",
+    "post/Git/images",
+    "post/Git",
+    "post/MITmissingSemester/images/Pasted image 20240716134416.png",
+    "post/MITmissingSemester/images",
+    "post/MITmissingSemester/Command-line Environment.md",
+    "post/Python/多数元素.md",
+    "post/Python/列表的原地操作.md",
+    "Log/2024-07-11.md",
+    "post/数据结构",
+    "Log/2024-07-10.md",
+    "post/Python/CS61a/第一章：使用函数构建抽象/Chapter 1 Building Abstractions with Functions.md",
+    "post/Python/CS61a/第一章：使用函数构建抽象/1.7 递归函数.md",
+    "post/Python/CS61a/第二章：使用数据构建抽象",
+    "post/MITmissingSemester/Vim.md",
+    "post/MITmissingSemester/shell.md",
+    "post/LinearAlgebra/Unit I/images/Pasted image 20240710140616.png",
+    "Log/2024-07-09.md",
+    "post/体系结构/Nand2Tetris/images/Pasted image 20240709195953.png",
+    "post/体系结构/Nand2Tetris/images/Pasted image 20240709194506.png",
+    "post/体系结构/Nand2Tetris/images/Pasted image 20240709193031.png",
+    "post/杂项",
+    "post/Python/CS61a/images/Pasted image 20240707163805.png",
+    "post/Python/CS61a/第一章：使用函数构建抽象",
+    "post/Python/images/Pasted image 20240707225223.png",
+    "post/Python/images",
+    "post/体系结构/Nand2Tetris/images/Pasted image 20240707203921.png",
+    "post/体系结构/Nand2Tetris/images/Pasted image 20240707203103.png",
+    "post/Python/CS61a/images",
+    "post/LinearAlgebra/Unit I/images",
+    "未命名.canvas"
+  ]
+}

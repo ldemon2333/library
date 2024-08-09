@@ -1,0 +1,214 @@
+# Unit I: Ax = b and the Four Subspaces
+
+![img](50ce4d8cddfa06b9c4d84f7e03a7e0e7_Unit_1_WIDE.jpg)
+
+Four Fundamental Subspaces. 
+
+## The Geometry of Linear Equations 
+
+Three ways of thinking about systems of linear equations.
+
++ row method
++ column method
++ matrix method
+
+$$
+\begin{align*}
+ 2x - y = 0 \\
+ -x+2y = 3
+\end{align*}
+$$
+
+### Row Picture
+
+一行看作是一条直线，两条方程代表两条直线，两条直线相交的点即为方程组解。
+
+### Column Picture
+
+在列视角中，重写方程组
+$$
+x
+\begin{bmatrix}
+	\begin{array}{c}
+		2 \\
+		-1  
+	\end{array}
+\end{bmatrix}
++y
+\begin{bmatrix}
+\begin{array}{c}
+-1\\
+2
+\end{array}
+\end{bmatrix}
+=
+\begin{bmatrix}
+0\\
+3
+\end{bmatrix}
+$$
+Given two vectors $\mathbf{c}$ and $\mathbf{d}$ and scalars $x$ and $y$, the sum $x\mathbf{c} + y\mathbf{d}$ is called a *linear combination* of $\mathbf{c}$ and $\mathbf{d}$.  
+
+看成列向量的线性组合。
+
+### Matrix Picture
+
+重写方程组
+$$
+\begin{bmatrix}
+\begin{array}{rr}
+2 &&-1\\
+-1&&2
+\end{array}
+\end{bmatrix}
+\begin{bmatrix}
+x\\y
+\end{bmatrix}=
+\begin{bmatrix}
+0\\3
+\end{bmatrix}
+$$
+即
+$$
+A\mathbf{x}=\mathbf{b}
+$$
+
+### Linear Independence
+
+In the column and matrix pictures, the right hand side of the equation is a vector $\mathbf{b}$. Given a matrix $A$, can we solve:
+$$
+A\mathbf{x}=\mathbf{b}
+$$
+for every possible vector $\mathbf{b}$? In other words, do the linear combinations of the column vectors fill the $xy$-plane (or space, in the three dimensional case)?
+
+​	If the answer is "no", we say that $A$ is a *singular matrix*（奇异矩阵). In this singular case its column vectors are *linearly dependent*(线性相关);矩阵称为不可逆矩阵(*not invertible*) all linear combinations of those vectors lie on a point or line (in two dimensions) or on a point, line or plane (in three dimensions). The combinations don't fill the whole space.
+
+## An overview of key ideas
+
+​	Linear algebra progresses from vectors to matrices to subspaces.
+
+### Subspaces
+
+​	The ***basis*** of a vector space is a set of linearly independent vectors that **span** the full space.	
+
+​	A *basis* for $\mathbb{R}^n$ is a collection of $n$ independent vectors in $\mathbb{R}^n$. Equivalently, a basis is a collection of $n$ vectors whose combinations cover the whole space. Or, a collection of vectors forms a basis whenever a matrix which has those vectors as its columns is invertible.
+
+​	A *vector space* is a collection of vectors that is closed under linear combinations. A *subspace* is a vector space inside another vector space; a plane through the origin in $\mathbb{R}^3$ is an example of a subspace. A subspace  could be the equal to the space it's contained in; the smallest subspace contains only the zero vector. 
+
+​	The subspaces of $\mathbb{R}^3$ are:
+
++ the origin,
++ a line through the origin,
++ a plane through the origin,
++ all of $\mathbb{R}^3$
+
+# Elimination with Matrices
+
+## Method of Elimination
+
+*Elimination* is the technique most commonly used  by computer software to solve systems of linear equations. It finds a solution $\mathbf{x}$ to $A\mathbf{x} = \mathbf{b}$ whenever the matrix $A$ is invertible. In the example used in class,
+
+$$
+A=\left[\begin{array}{lll}
+1&2&1\\
+3&8&1\\
+0&4&1
+\end{array}\right] \text{ and } \mathbf{b}=\left[\begin{array}{r}
+2\\
+12\\
+2
+\end{array}\right]
+
+
+$$
+
+We started with an invertible matrix $A$ and ended with an *upper triangular* matrix $U$; the lower left portion of $U$ is filled with zeros. Pivots $1,2,5$ are on the diagonal of $U$.
+
+$$
+A = \left[\begin{array}{lll}
+1&2&1\\
+3&8&1\\
+0&4&1
+\end{array}\right] \rightarrow
+\left[\begin{array}{rrr}
+1&2&1\\
+0&2&-2\\
+0&4&1
+\end{array}\right] \rightarrow
+U=\left[\begin{array}{rrr}
+1&2&1\\
+0&2&-2\\
+0&0&5
+\end{array}\right]
+$$
+
+We repeat the multiplications and subtractions with the vector $\mathbf{b} =\left[\begin{array}{r} 2\\12\\2\end{array}\right]$.
+$U\mathbf{x} = \mathbf{c}$, $\mathbf{c} =\left[\begin{array}{r} 2\\6\\-10\end{array}\right]$.
+
+The equation $U\mathbf{x} = \mathbf{c}$ is easy to solve by *back substitution*; The *determinant* of $U$ is the product of the pivots.
+
+# Multiplication and Inverse Matrices
+
+## Matrix Multiplication
+Four different ways of thinking about the product $AB=C$ of two matrices. If $A$ is an $m\times n$ matrix and B is an $n \times p$ matrix, then $C$ is an $m \times p$ matrix.
+
+### Standard(row times column)
+
+### Columns
+The product of matrix $A$ and column $j$ of matrix $B$ equals column $j$ of matrix $C$. This tells us that the columns of $C$ are combinations of columns of $A$.
+
+### Rows
+The rows of $C$ are combinations of rows of $B$.
+
+### Column times row
+A column of $A$ is an $m \times 1$ vector and a row of $B$ is a  $1\times p$ vector. Their product is a matrix:
+$$
+\left[\begin{array}{l}
+2\\3\\4
+\end{array}\right]
+\left[\begin{array}{l}  1&6  \end{array}\right] =\left[\begin{array}{ll}
+2&12\\
+3&18\\
+4&24
+\end{array}\right]
+$$
+
+The product of $A$ and $B$ is the sum of these "column times row" matrices:
+$$
+AB=\sum_{k=1}^n\left[\begin{array}{}
+a_{1k}\\
+\vdots\\
+a_{mk}
+\end{array}\right]
+\left[\begin{array}{l}  b_{k1}&\cdots&b_{kn}  \end{array}\right]
+$$
+
+### Blocks
+If we subdivide $A$ and $B$ into blocks that match properly, we can write the product $AB=C$ in terms of products of the blocks:
+$$
+\left[\begin{array}{}
+A_1 & A_2\\
+A_3 & A_4
+\end{array}\right]
+\left[\begin{array}{}
+B_1 & B_2\\
+B_3 & B_4
+\end{array}\right]=
+\left[\begin{array}{}
+C_1 & C_2\\
+C_3 & C_4
+\end{array}\right]
+$$
+Here $C_1 = A_1B_1 +A_2B_3$
+
+## Inverses
+### Square matrices
+If $A$ is square matrix, if $A^{-1}A=I=AA^{-1}$ and we say that $A$ is *invertible* of *nonsingular*.
+
+If $A$ is singular, $A$ does not have an inverse - its determinant is zero and we can find some non-zero vector $\mathbf{x}$ for which $A\mathbf{x}=0$. 
+
+### Gauss-Jordan Elimination
+We can use the method of elimination to solve two or more linear equations at the same time. Just augment the matrix with the whole identity matrix $I$:
+$$
+\left[\begin{array}{rr|rr} 1 & 3 & 1 & 0 \\ 2 & 7 & 0 & 1 \\ \end{array}\right] \longrightarrow \left[\begin{array}{rr|rr} 1 & 3 & 1 & 0 \\ 0 & 1 & -2 & 1 \\ \end{array}\right] \longrightarrow \left[\begin{array}{rr|rr} 1 & 0 & 7 & -3 \\ 0 & 1 & -2 & 1 \\ \end{array}\right]
+$$

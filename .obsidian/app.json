@@ -1,0 +1,12 @@
+{
+  "showLineNumber": false,
+  "attachmentFolderPath": "./images",
+  "useTab": true,
+  "rightToLeft": false,
+  "vimMode": false,
+  "promptDelete": true,
+  "alwaysUpdateLinks": true,
+  "trashOption": "none",
+  "newFileLocation": "current",
+  "strictLineBreaks": true
+}
