@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "0e9ed0ace03c6935",
+        "id": "8420b802c4661fa4",
         "type": "tabs",
         "children": [
           {
-            "id": "538ea9f4c3417f42",
+            "id": "745a9322d96ca7fc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
             }
           }
         ],
@@ -140,54 +149,53 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "538ea9f4c3417f42",
+  "active": "745a9322d96ca7fc",
   "lastOpenFiles": [
     "sidebar.md",
-    "post/MITmissingSemester/Debugging and Profiling.md",
+    "assets/img/logo.png",
+    "README.md",
+    "Library/MITmissingSemester/Debugging and Profiling.md",
     "未命名.md",
     "Log/2024-08-09.md",
-    "post/Git/2.1 Git 基础 - 获取 Git 仓库.md",
-    "post/MITmissingSemester/Git.md",
+    "Library/Git/2.1 Git 基础 - 获取 Git 仓库.md",
+    "Library/MITmissingSemester/Git.md",
     "Log/2024-07-17.md",
-    "post/LinearAlgebra/Unit I/1.11.md",
-    "post/数据结构/单调栈.md",
-    "post/数据结构/二分.md",
+    "Library/LinearAlgebra/Unit I/1.11.md",
+    "Library/数据结构/单调栈.md",
+    "Library/数据结构/二分.md",
     "Log/2024-07-16.md",
     "Log/2024-07-14.md",
-    "post/Python/CS61a/第二章：使用数据构建抽象/2.1 引言.md",
-    "post/LinearAlgebra/Unit I/1.10.md",
-    "post/LinearAlgebra/Unit I/1.9.md",
-    "post/LinearAlgebra/Unit I/1.7 Column Space and Nullspace.md",
-    "post/Git/images/Pasted image 20240716135928.png",
-    "post/Git/images",
-    "post/Git",
-    "post/MITmissingSemester/images/Pasted image 20240716134416.png",
-    "post/MITmissingSemester/images",
-    "post/MITmissingSemester/Command-line Environment.md",
-    "post/Python/多数元素.md",
-    "post/Python/列表的原地操作.md",
+    "Library/Python/CS61a/第二章：使用数据构建抽象/2.1 引言.md",
+    "Library/LinearAlgebra/Unit I/1.10.md",
+    "Library/LinearAlgebra/Unit I/1.9.md",
+    "Library/LinearAlgebra/Unit I/1.7 Column Space and Nullspace.md",
+    "Library/Git/images/Pasted image 20240716135928.png",
+    "Library/Git/images",
+    "Library/Git",
+    "Library/MITmissingSemester/images/Pasted image 20240716134416.png",
+    "Library/MITmissingSemester/images",
+    "Library/MITmissingSemester/Command-line Environment.md",
+    "Library/Python/多数元素.md",
+    "Library/Python/列表的原地操作.md",
     "Log/2024-07-11.md",
-    "post/数据结构",
+    "Library/数据结构",
     "Log/2024-07-10.md",
-    "post/Python/CS61a/第一章：使用函数构建抽象/Chapter 1 Building Abstractions with Functions.md",
-    "post/Python/CS61a/第一章：使用函数构建抽象/1.7 递归函数.md",
-    "post/Python/CS61a/第二章：使用数据构建抽象",
-    "post/MITmissingSemester/Vim.md",
-    "post/MITmissingSemester/shell.md",
-    "post/LinearAlgebra/Unit I/images/Pasted image 20240710140616.png",
-    "Log/2024-07-09.md",
-    "post/体系结构/Nand2Tetris/images/Pasted image 20240709195953.png",
-    "post/体系结构/Nand2Tetris/images/Pasted image 20240709194506.png",
-    "post/体系结构/Nand2Tetris/images/Pasted image 20240709193031.png",
-    "post/杂项",
-    "post/Python/CS61a/images/Pasted image 20240707163805.png",
-    "post/Python/CS61a/第一章：使用函数构建抽象",
-    "post/Python/images/Pasted image 20240707225223.png",
-    "post/Python/images",
-    "post/体系结构/Nand2Tetris/images/Pasted image 20240707203921.png",
-    "post/体系结构/Nand2Tetris/images/Pasted image 20240707203103.png",
-    "post/Python/CS61a/images",
-    "post/LinearAlgebra/Unit I/images",
+    "Library/Python/CS61a/第一章：使用函数构建抽象/Chapter 1 Building Abstractions with Functions.md",
+    "Library/Python/CS61a/第一章：使用函数构建抽象/1.7 递归函数.md",
+    "Library/Python/CS61a/第二章：使用数据构建抽象",
+    "Library/MITmissingSemester/Vim.md",
+    "Library/LinearAlgebra/Unit I/images/Pasted image 20240710140616.png",
+    "Library/体系结构/Nand2Tetris/images/Pasted image 20240709195953.png",
+    "Library/体系结构/Nand2Tetris/images/Pasted image 20240709194506.png",
+    "Library/体系结构/Nand2Tetris/images/Pasted image 20240709193031.png",
+    "Library/杂项",
+    "Library/Python/CS61a/images/Pasted image 20240707163805.png",
+    "Library/Python/CS61a/第一章：使用函数构建抽象",
+    "Library/Python/images/Pasted image 20240707225223.png",
+    "Library/Python/images",
+    "Library/体系结构/Nand2Tetris/images/Pasted image 20240707203921.png",
+    "Library/Python/CS61a/images",
+    "Library/LinearAlgebra/Unit I/images",
     "未命名.canvas"
   ]
 }
