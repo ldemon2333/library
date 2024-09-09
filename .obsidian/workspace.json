@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8420b802c4661fa4",
+        "id": "f03b7304186ae37a",
         "type": "tabs",
         "children": [
           {
-            "id": "745a9322d96ca7fc",
+            "id": "98b1e8f1115fafd1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Library/脑机/脑机接口技术综述.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1aaefe1a03615f71",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Library/脑机/脑机接口技术综述.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Library/脑机/脑机接口技术综述.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Library/脑机/脑机接口技术综述.md"
               }
             }
           }
@@ -149,17 +150,22 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "745a9322d96ca7fc",
+  "active": "98b1e8f1115fafd1",
   "lastOpenFiles": [
+    "Library/脑机/images/Pasted image 20240909101614.png",
+    "Library/脑机/images",
+    "Log/2024-09-09.md",
+    "Library/脑机/脑机接口技术综述.md",
+    "Log/2024-08-09.md",
+    "Library/脑机",
+    "Log/2024-07-17.md",
+    "README.md",
     "sidebar.md",
     "assets/img/logo.png",
-    "README.md",
     "Library/MITmissingSemester/Debugging and Profiling.md",
     "未命名.md",
-    "Log/2024-08-09.md",
     "Library/Git/2.1 Git 基础 - 获取 Git 仓库.md",
     "Library/MITmissingSemester/Git.md",
-    "Log/2024-07-17.md",
     "Library/LinearAlgebra/Unit I/1.11.md",
     "Library/数据结构/单调栈.md",
     "Library/数据结构/二分.md",
@@ -181,9 +187,7 @@
     "Library/数据结构",
     "Log/2024-07-10.md",
     "Library/Python/CS61a/第一章：使用函数构建抽象/Chapter 1 Building Abstractions with Functions.md",
-    "Library/Python/CS61a/第一章：使用函数构建抽象/1.7 递归函数.md",
     "Library/Python/CS61a/第二章：使用数据构建抽象",
-    "Library/MITmissingSemester/Vim.md",
     "Library/LinearAlgebra/Unit I/images/Pasted image 20240710140616.png",
     "Library/体系结构/Nand2Tetris/images/Pasted image 20240709195953.png",
     "Library/体系结构/Nand2Tetris/images/Pasted image 20240709194506.png",
@@ -194,8 +198,6 @@
     "Library/Python/images/Pasted image 20240707225223.png",
     "Library/Python/images",
     "Library/体系结构/Nand2Tetris/images/Pasted image 20240707203921.png",
-    "Library/Python/CS61a/images",
-    "Library/LinearAlgebra/Unit I/images",
     "未命名.canvas"
   ]
 }
