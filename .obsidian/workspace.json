@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "f03b7304186ae37a",
+        "id": "d76fa6f323ba7d07",
         "type": "tabs",
         "children": [
           {
-            "id": "98b1e8f1115fafd1",
+            "id": "412f842bbac6c7b2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Library/脑机/脑机接口技术综述.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -87,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Library/脑机/脑机接口技术综述.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Library/脑机/脑机接口技术综述.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Library/脑机/脑机接口技术综述.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -150,13 +141,26 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "98b1e8f1115fafd1",
+  "active": "412f842bbac6c7b2",
   "lastOpenFiles": [
+    "Log/2024-09-10.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/python.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images/Pasted image 20240910103148.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images/Pasted image 20240910103005.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images/Pasted image 20240910102213.png",
+    "Log/2024-09-09.md",
+    "Log/2024-08-09.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images/Pasted image 20240909230008.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images/Pasted image 20240909225734.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images/Pasted image 20240909225627.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images",
+    "Library/鸢尾花书：从加减乘除到机器学习/Ch0前言.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/编程不难",
+    "Library/未命名.md",
+    "Library/鸢尾花书：从加减乘除到机器学习",
+    "Library/脑机/脑机接口技术综述.md",
     "Library/脑机/images/Pasted image 20240909101614.png",
     "Library/脑机/images",
-    "Log/2024-09-09.md",
-    "Library/脑机/脑机接口技术综述.md",
-    "Log/2024-08-09.md",
     "Library/脑机",
     "Log/2024-07-17.md",
     "README.md",
@@ -182,22 +186,8 @@
     "Library/MITmissingSemester/images",
     "Library/MITmissingSemester/Command-line Environment.md",
     "Library/Python/多数元素.md",
-    "Library/Python/列表的原地操作.md",
-    "Log/2024-07-11.md",
     "Library/数据结构",
-    "Log/2024-07-10.md",
-    "Library/Python/CS61a/第一章：使用函数构建抽象/Chapter 1 Building Abstractions with Functions.md",
     "Library/Python/CS61a/第二章：使用数据构建抽象",
-    "Library/LinearAlgebra/Unit I/images/Pasted image 20240710140616.png",
-    "Library/体系结构/Nand2Tetris/images/Pasted image 20240709195953.png",
-    "Library/体系结构/Nand2Tetris/images/Pasted image 20240709194506.png",
-    "Library/体系结构/Nand2Tetris/images/Pasted image 20240709193031.png",
-    "Library/杂项",
-    "Library/Python/CS61a/images/Pasted image 20240707163805.png",
-    "Library/Python/CS61a/第一章：使用函数构建抽象",
-    "Library/Python/images/Pasted image 20240707225223.png",
-    "Library/Python/images",
-    "Library/体系结构/Nand2Tetris/images/Pasted image 20240707203921.png",
     "未命名.canvas"
   ]
 }
