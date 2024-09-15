@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "d76fa6f323ba7d07",
+        "id": "933c88b033f21ee9",
         "type": "tabs",
         "children": [
           {
-            "id": "412f842bbac6c7b2",
+            "id": "6542b9d717d98ba7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "test.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -65,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1aaefe1a03615f71",
@@ -82,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "test.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "test.md"
+              }
             }
           }
         ],
@@ -138,56 +146,57 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "workspaces:管理工作区布局": false
+      "workspaces:管理工作区布局": false,
+      "auto-literature:AutoLiter": false
     }
   },
-  "active": "412f842bbac6c7b2",
+  "active": "6542b9d717d98ba7",
   "lastOpenFiles": [
-    "Log/2024-09-10.md",
+    "pdfs/Using_goal_driven_deep_learning_models_t.pdf",
+    "pdfs/Attention Is All You Need.pdf",
+    "test.md",
+    "Library/脑机/脑机接口技术综述.md",
+    "pdfs/Population imbalance in the extended Fermi-Hubbard model.pdf",
+    "pdfs/Deep Residual Learning for Image Recognition.pdf",
+    "pdfs",
+    "Library/LinearAlgebra/基向量变换.md",
+    "Library/LinearAlgebra/images/Pasted image 20240915152157.png",
+    "Library/LinearAlgebra/images/Pasted image 20240915152147.png",
+    "Library/LinearAlgebra/images/Pasted image 20240915152039.png",
+    "Library/LinearAlgebra/images/Pasted image 20240915151923.png",
+    "Library/LinearAlgebra/images/Pasted image 20240915151705.png",
+    "Library/LinearAlgebra/images/Pasted image 20240915151632.png",
+    "Library/LinearAlgebra/images/Pasted image 20240915151254.png",
+    "Library/LinearAlgebra/images/Pasted image 20240915151210.png",
+    "Library/LinearAlgebra/images/Pasted image 20240915151208.png",
+    "Library/LinearAlgebra/images/Pasted image 20240915151159.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch17Ch18 多元函数微分.md",
+    "Library/LinearAlgebra/奇异值分解.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch15 奇异值分解.md",
+    "Log/2024-09-15.md",
+    "Log/2024-09-13.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch9Ch10 正交投影.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch2向量运算.md",
+    "Library/LinearAlgebra/区别旋转变换与剪切变换.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch13 特征值分解.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch11 矩阵分解.md",
+    "Log/2024-09-11.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images",
+    "Library/鸢尾花书：从加减乘除到机器学习/可视之美/Ch28 奇异值分解.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量",
+    "Library/LinearAlgebra/特征值与特征向量.md",
+    "Library/LinearAlgebra/行列式本质.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/可视之美/images",
     "Library/鸢尾花书：从加减乘除到机器学习/编程不难/python.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images/Pasted image 20240910103148.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images/Pasted image 20240910103005.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images/Pasted image 20240910102213.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/可视之美",
+    "Log/2024-09-10.md",
     "Log/2024-09-09.md",
     "Log/2024-08-09.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images/Pasted image 20240909230008.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images/Pasted image 20240909225734.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images/Pasted image 20240909225627.png",
     "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images",
     "Library/鸢尾花书：从加减乘除到机器学习/Ch0前言.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/编程不难",
     "Library/未命名.md",
-    "Library/鸢尾花书：从加减乘除到机器学习",
-    "Library/脑机/脑机接口技术综述.md",
-    "Library/脑机/images/Pasted image 20240909101614.png",
-    "Library/脑机/images",
-    "Library/脑机",
     "Log/2024-07-17.md",
     "README.md",
-    "sidebar.md",
-    "assets/img/logo.png",
-    "Library/MITmissingSemester/Debugging and Profiling.md",
-    "未命名.md",
-    "Library/Git/2.1 Git 基础 - 获取 Git 仓库.md",
-    "Library/MITmissingSemester/Git.md",
-    "Library/LinearAlgebra/Unit I/1.11.md",
-    "Library/数据结构/单调栈.md",
-    "Library/数据结构/二分.md",
-    "Log/2024-07-16.md",
-    "Log/2024-07-14.md",
-    "Library/Python/CS61a/第二章：使用数据构建抽象/2.1 引言.md",
-    "Library/LinearAlgebra/Unit I/1.10.md",
-    "Library/LinearAlgebra/Unit I/1.9.md",
-    "Library/LinearAlgebra/Unit I/1.7 Column Space and Nullspace.md",
-    "Library/Git/images/Pasted image 20240716135928.png",
-    "Library/Git/images",
-    "Library/Git",
-    "Library/MITmissingSemester/images/Pasted image 20240716134416.png",
-    "Library/MITmissingSemester/images",
-    "Library/MITmissingSemester/Command-line Environment.md",
-    "Library/Python/多数元素.md",
-    "Library/数据结构",
-    "Library/Python/CS61a/第二章：使用数据构建抽象",
     "未命名.canvas"
   ]
 }

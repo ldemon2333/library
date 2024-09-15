@@ -1,0 +1,7 @@
+{
+  "outputFormat": "- **${title}** ([link](${url}))\n\t- *${author} et.al.*\n\t- ${journal}\n\t- ${pubDate}",
+  "regExp": "- {.{3,}}",
+  "autoDownloadPDF": true,
+  "pdfDownloadPathCalculation": "vault",
+  "pdfDownloadPath": "pdfs"
+}
