@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "933c88b033f21ee9",
+        "id": "d8f1aed2f24d4a4a",
         "type": "tabs",
         "children": [
           {
-            "id": "6542b9d717d98ba7",
+            "id": "70097c307fbf4e72",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "test.md",
+                "file": "Library/动手学深度学习/8 循环神经网络.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1aaefe1a03615f71",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "test.md",
+                "file": "Library/动手学深度学习/8 循环神经网络.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "test.md",
+                "file": "Library/动手学深度学习/8 循环神经网络.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "test.md"
+                "file": "Library/动手学深度学习/8 循环神经网络.md"
               }
             }
           }
@@ -150,27 +151,38 @@
       "auto-literature:AutoLiter": false
     }
   },
-  "active": "6542b9d717d98ba7",
+  "active": "70097c307fbf4e72",
   "lastOpenFiles": [
+    "Library/MITmissingSemester/Debugging and Profiling.md",
+    "Library/动手学深度学习/8 循环神经网络.md",
+    "Library/动手学深度学习",
+    "Library/鸢尾花书：从加减乘除到机器学习/机器学习/Ch02 回归分析.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/机器学习/images/Pasted image 20240916140015.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/机器学习/images",
+    "Library/鸢尾花书：从加减乘除到机器学习/机器学习",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch21 曲面和正定性.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images/Pasted image 20240916135454.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images/Pasted image 20240916135423.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images/Pasted image 20240916135338.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images/Pasted image 20240916135241.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images/Pasted image 20240916135234.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images/Pasted image 20240916135227.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images/Pasted image 20240916135114.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images/Pasted image 20240916135033.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images/Pasted image 20240916134901.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch19 直线到超平面.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch17Ch18 多元函数微分.md",
     "pdfs/Using_goal_driven_deep_learning_models_t.pdf",
-    "pdfs/Attention Is All You Need.pdf",
+    "pdfs/Using_goal_driven_deep_learning_models_t.md",
+    "pdfs/images",
+    "Library/脑机/未命名.md",
     "test.md",
+    "pdfs/Attention Is All You Need.pdf",
     "Library/脑机/脑机接口技术综述.md",
     "pdfs/Population imbalance in the extended Fermi-Hubbard model.pdf",
     "pdfs/Deep Residual Learning for Image Recognition.pdf",
     "pdfs",
     "Library/LinearAlgebra/基向量变换.md",
-    "Library/LinearAlgebra/images/Pasted image 20240915152157.png",
-    "Library/LinearAlgebra/images/Pasted image 20240915152147.png",
-    "Library/LinearAlgebra/images/Pasted image 20240915152039.png",
-    "Library/LinearAlgebra/images/Pasted image 20240915151923.png",
-    "Library/LinearAlgebra/images/Pasted image 20240915151705.png",
-    "Library/LinearAlgebra/images/Pasted image 20240915151632.png",
-    "Library/LinearAlgebra/images/Pasted image 20240915151254.png",
-    "Library/LinearAlgebra/images/Pasted image 20240915151210.png",
-    "Library/LinearAlgebra/images/Pasted image 20240915151208.png",
-    "Library/LinearAlgebra/images/Pasted image 20240915151159.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch17Ch18 多元函数微分.md",
     "Library/LinearAlgebra/奇异值分解.md",
     "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch15 奇异值分解.md",
     "Log/2024-09-15.md",
@@ -183,20 +195,10 @@
     "Log/2024-09-11.md",
     "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images",
     "Library/鸢尾花书：从加减乘除到机器学习/可视之美/Ch28 奇异值分解.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量",
     "Library/LinearAlgebra/特征值与特征向量.md",
     "Library/LinearAlgebra/行列式本质.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/可视之美/images",
     "Library/鸢尾花书：从加减乘除到机器学习/编程不难/python.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/可视之美",
     "Log/2024-09-10.md",
-    "Log/2024-09-09.md",
-    "Log/2024-08-09.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images",
-    "Library/鸢尾花书：从加减乘除到机器学习/Ch0前言.md",
-    "Library/未命名.md",
-    "Log/2024-07-17.md",
-    "README.md",
     "未命名.canvas"
   ]
 }
