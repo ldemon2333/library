@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d8f1aed2f24d4a4a",
+        "id": "9365198f0c510a0c",
         "type": "tabs",
         "children": [
           {
-            "id": "70097c307fbf4e72",
+            "id": "d178cd9a6ebc1c3c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Library/动手学深度学习/8 循环神经网络.md",
+                "file": "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Library/动手学深度学习/8 循环神经网络.md",
+                "file": "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Library/动手学深度学习/8 循环神经网络.md",
+                "file": "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Library/动手学深度学习/8 循环神经网络.md"
+                "file": "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.md"
               }
             }
           }
@@ -151,54 +151,54 @@
       "auto-literature:AutoLiter": false
     }
   },
-  "active": "70097c307fbf4e72",
+  "active": "d178cd9a6ebc1c3c",
   "lastOpenFiles": [
-    "Library/MITmissingSemester/Debugging and Profiling.md",
-    "Library/动手学深度学习/8 循环神经网络.md",
-    "Library/动手学深度学习",
-    "Library/鸢尾花书：从加减乘除到机器学习/机器学习/Ch02 回归分析.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/机器学习/images/Pasted image 20240916140015.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/机器学习/images",
-    "Library/鸢尾花书：从加减乘除到机器学习/机器学习",
+    "pdfs/images/Pasted image 20240920144547.png",
+    "pdfs/images/Pasted image 20240920144341.png",
+    "pdfs/images/Pasted image 20240920141600.png",
+    "pdfs/images/Pasted image 20240920123436.png",
+    "pdfs/images/Pasted image 20240920123413.png",
+    "pdfs/images/Pasted image 20240920123218.png",
+    "pdfs/images/Pasted image 20240920122439.png",
+    "pdfs/images/Pasted image 20240920105539.png",
+    "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.pdf",
+    "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.md",
+    "Library/MachineLearning/Linear Model.md",
+    "Library/MachineLearning/逻辑回归（LR）.md",
     "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch21 曲面和正定性.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images/Pasted image 20240916135454.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images/Pasted image 20240916135423.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images/Pasted image 20240916135338.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images/Pasted image 20240916135241.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images/Pasted image 20240916135234.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images/Pasted image 20240916135227.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images/Pasted image 20240916135114.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images/Pasted image 20240916135033.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images/Pasted image 20240916134901.png",
     "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch19 直线到超平面.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/统计至简/Ch01.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch11 矩阵分解.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/统计至简/images/Pasted image 20240919113526.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/统计至简/images/Pasted image 20240919113514.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/统计至简/images/Pasted image 20240919113435.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/统计至简/images",
+    "Library/鸢尾花书：从加减乘除到机器学习/未命名.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/统计至简",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch24 数据分解.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch22 数据与统计.md",
     "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch17Ch18 多元函数微分.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch15 奇异值分解.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch23  数据空间.md",
+    "Log/2024-09-18.md",
+    "Log/2024-09-13.md",
+    "Log/2024-09-15.md",
+    "Library/MITmissingSemester/Vim.md",
+    "test.md",
+    "pdfs/images",
     "pdfs/Using_goal_driven_deep_learning_models_t.pdf",
     "pdfs/Using_goal_driven_deep_learning_models_t.md",
-    "pdfs/images",
-    "Library/脑机/未命名.md",
-    "test.md",
     "pdfs/Attention Is All You Need.pdf",
-    "Library/脑机/脑机接口技术综述.md",
-    "pdfs/Population imbalance in the extended Fermi-Hubbard model.pdf",
-    "pdfs/Deep Residual Learning for Image Recognition.pdf",
     "pdfs",
-    "Library/LinearAlgebra/基向量变换.md",
-    "Library/LinearAlgebra/奇异值分解.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch15 奇异值分解.md",
-    "Log/2024-09-15.md",
-    "Log/2024-09-13.md",
+    "Log/2024-09-11.md",
+    "Log/2024-09-10.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/python.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images",
+    "Library/鸢尾花书：从加减乘除到机器学习/编程不难",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images",
     "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch9Ch10 正交投影.md",
     "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch2向量运算.md",
-    "Library/LinearAlgebra/区别旋转变换与剪切变换.md",
     "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch13 特征值分解.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch11 矩阵分解.md",
-    "Log/2024-09-11.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images",
-    "Library/鸢尾花书：从加减乘除到机器学习/可视之美/Ch28 奇异值分解.md",
-    "Library/LinearAlgebra/特征值与特征向量.md",
-    "Library/LinearAlgebra/行列式本质.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/python.md",
-    "Log/2024-09-10.md",
     "未命名.canvas"
   ]
 }
