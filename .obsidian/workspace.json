@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9365198f0c510a0c",
+        "id": "1ce6e374470f7a64",
         "type": "tabs",
         "children": [
           {
-            "id": "d178cd9a6ebc1c3c",
+            "id": "58b0774e1a3f01c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.md",
+                "file": "Library/MachineLearning/梯度提升树（GBDT）原理小结.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.md",
+                "file": "Library/MachineLearning/梯度提升树（GBDT）原理小结.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.md",
+                "file": "Library/MachineLearning/梯度提升树（GBDT）原理小结.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.md"
+                "file": "Library/MachineLearning/梯度提升树（GBDT）原理小结.md"
               }
             }
           }
@@ -151,54 +151,53 @@
       "auto-literature:AutoLiter": false
     }
   },
-  "active": "d178cd9a6ebc1c3c",
+  "active": "58b0774e1a3f01c8",
   "lastOpenFiles": [
-    "pdfs/images/Pasted image 20240920144547.png",
-    "pdfs/images/Pasted image 20240920144341.png",
-    "pdfs/images/Pasted image 20240920141600.png",
-    "pdfs/images/Pasted image 20240920123436.png",
-    "pdfs/images/Pasted image 20240920123413.png",
-    "pdfs/images/Pasted image 20240920123218.png",
-    "pdfs/images/Pasted image 20240920122439.png",
-    "pdfs/images/Pasted image 20240920105539.png",
-    "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.pdf",
-    "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.md",
-    "Library/MachineLearning/Linear Model.md",
+    "Library/MachineLearning/scikit-learn 梯度提升树(GBDT)调参小结.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/离群值.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921155723.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921155714.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921155309.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921155233.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921155225.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921154913.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921154842.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921154754.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/Ch02 缺失值.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921154545.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921154247.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images",
+    "Library/鸢尾花书：从加减乘除到机器学习/数据有道",
+    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/python.md",
+    "Library/MachineLearning/支持向量机原理 (二) 线性支持向量机的软间隔最大化模型.md",
+    "Library/MachineLearning/梯度提升树（GBDT）原理小结.md",
+    "Library/MachineLearning/集成学习之Adaboost算法原理小结.md",
+    "Library/MachineLearning/提升树.md",
     "Library/MachineLearning/逻辑回归（LR）.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/统计至简/Ch01.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch2向量运算.md",
+    "Library/DeepLearning/d2l/16 NLP Applications.md",
+    "Library/DeepLearning/深度学习.md",
+    "Library/MachineLearning/scikit-learn Adaboost类库使用小结.md",
+    "Log/2024-09-20.md",
+    "Log/2024-09-21.md",
+    "Library/MachineLearning/集成学习.md",
+    "Library/MachineLearning/Linear Model.md",
+    "Library/MachineLearning/SVM.md",
+    "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.md",
+    "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.pdf",
     "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch21 曲面和正定性.md",
     "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch19 直线到超平面.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/统计至简/Ch01.md",
     "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch11 矩阵分解.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/统计至简/images/Pasted image 20240919113526.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/统计至简/images/Pasted image 20240919113514.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/统计至简/images/Pasted image 20240919113435.png",
     "Library/鸢尾花书：从加减乘除到机器学习/统计至简/images",
     "Library/鸢尾花书：从加减乘除到机器学习/未命名.md",
     "Library/鸢尾花书：从加减乘除到机器学习/统计至简",
     "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch24 数据分解.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch22 数据与统计.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch17Ch18 多元函数微分.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch15 奇异值分解.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch23  数据空间.md",
-    "Log/2024-09-18.md",
-    "Log/2024-09-13.md",
-    "Log/2024-09-15.md",
-    "Library/MITmissingSemester/Vim.md",
-    "test.md",
     "pdfs/images",
     "pdfs/Using_goal_driven_deep_learning_models_t.pdf",
-    "pdfs/Using_goal_driven_deep_learning_models_t.md",
     "pdfs/Attention Is All You Need.pdf",
     "pdfs",
-    "Log/2024-09-11.md",
-    "Log/2024-09-10.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/python.md",
     "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images",
-    "Library/鸢尾花书：从加减乘除到机器学习/编程不难",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/images",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch9Ch10 正交投影.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch2向量运算.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch13 特征值分解.md",
     "未命名.canvas"
   ]
 }
