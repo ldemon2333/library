@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1ce6e374470f7a64",
+        "id": "401ca38b632508f4",
         "type": "tabs",
         "children": [
           {
-            "id": "58b0774e1a3f01c8",
+            "id": "05e7d06743de03be",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Library/MachineLearning/梯度提升树（GBDT）原理小结.md",
+                "file": "Library/书籍/脑机穿越.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Library/MachineLearning/梯度提升树（GBDT）原理小结.md",
+                "file": "Library/书籍/脑机穿越.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Library/MachineLearning/梯度提升树（GBDT）原理小结.md",
+                "file": "Library/书籍/脑机穿越.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Library/MachineLearning/梯度提升树（GBDT）原理小结.md"
+                "file": "Library/书籍/脑机穿越.md"
               }
             }
           }
@@ -151,53 +151,54 @@
       "auto-literature:AutoLiter": false
     }
   },
-  "active": "58b0774e1a3f01c8",
+  "active": "05e7d06743de03be",
   "lastOpenFiles": [
-    "Library/MachineLearning/scikit-learn 梯度提升树(GBDT)调参小结.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/离群值.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921155723.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921155714.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921155309.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921155233.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921155225.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921154913.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921154842.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921154754.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/Ch02 缺失值.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921154545.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images/Pasted image 20240921154247.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/数据有道/images",
-    "Library/鸢尾花书：从加减乘除到机器学习/数据有道",
-    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/python.md",
-    "Library/MachineLearning/支持向量机原理 (二) 线性支持向量机的软间隔最大化模型.md",
-    "Library/MachineLearning/梯度提升树（GBDT）原理小结.md",
-    "Library/MachineLearning/集成学习之Adaboost算法原理小结.md",
-    "Library/MachineLearning/提升树.md",
-    "Library/MachineLearning/逻辑回归（LR）.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/统计至简/Ch01.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch2向量运算.md",
-    "Library/DeepLearning/d2l/16 NLP Applications.md",
-    "Library/DeepLearning/深度学习.md",
-    "Library/MachineLearning/scikit-learn Adaboost类库使用小结.md",
-    "Log/2024-09-20.md",
-    "Log/2024-09-21.md",
-    "Library/MachineLearning/集成学习.md",
-    "Library/MachineLearning/Linear Model.md",
-    "Library/MachineLearning/SVM.md",
-    "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.md",
-    "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.pdf",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch21 曲面和正定性.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch19 直线到超平面.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch11 矩阵分解.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/统计至简/images",
-    "Library/鸢尾花书：从加减乘除到机器学习/未命名.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/统计至简",
-    "Library/鸢尾花书：从加减乘除到机器学习/矩阵的力量/Ch24 数据分解.md",
-    "pdfs/images",
-    "pdfs/Using_goal_driven_deep_learning_models_t.pdf",
-    "pdfs/Attention Is All You Need.pdf",
-    "pdfs",
-    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images",
+    "Library/Pytorch/Pytorch 官方文档.md",
+    "Library/书籍/脑机穿越.md",
+    "Library/书籍",
+    "Library/Pytorch",
+    "Library/snnTorch/T5：FCN.md",
+    "Library/snnTorch/Tutorial 1 - Spike Encoding.md",
+    "Library/snnTorch/images/Pasted image 20241011210501.png",
+    "Library/snnTorch/images/Pasted image 20241011203003.png",
+    "Library/snnTorch/images/Pasted image 20241011202815.png",
+    "Library/snnTorch/images/Pasted image 20241011202552.png",
+    "Library/snnTorch/T4：二阶脉冲神经元模型.md",
+    "Library/神经动力学/3.1 突触.md",
+    "Library/神经动力学/images/Pasted image 20241011200203.png",
+    "Library/神经动力学/images/Pasted image 20241011195910.png",
+    "Library/神经动力学/images",
+    "Library/脑机/Tuning cureve 绘制.md",
+    "Library/脑机/脑机接口技术综述.md",
+    "Library/脑机/SNN.md",
+    "Library/神经动力学",
+    "Library/未命名.md",
+    "Library/snnTorch/神经突触机理.md",
+    "Library/snnTorch/images/Pasted image 20241011191105.png",
+    "Library/BrainScience/2.md",
+    "Library/BrainScience/1.md",
+    "Library/snnTorch/images/Pasted image 20241011175450.png",
+    "Library/snnTorch/images/Pasted image 20241011175023.png",
+    "Library/snnTorch/images/Pasted image 20241011174340.png",
+    "Library/snnTorch/Tutorial 3 前馈SNN.md",
+    "Library/snnTorch/Tutorial 2 - The Leaky Integrate-and-Fire Neuron.md",
+    "pdfs/Training Spiking Neural Networks Using Lessons From Deep Learning.md",
+    "pdfs/Training_Spiking_Neural_Networks_Using_Lessons_From_Deep_Learning.pdf",
+    "Library/AI系统/二.AI硬件体系结构/AI计算体系概述/关键设计指标.md",
+    "Library/AI系统/二.AI硬件体系结构/图像处理器GPU/GPU 工作原理.md",
+    "Library/AI系统/二.AI硬件体系结构/图像处理器GPU/images",
+    "未命名.md",
+    "Library/AI系统/二.AI硬件体系结构/图像处理器GPU/未命名",
+    "Library/AI系统/二.AI硬件体系结构/图像处理器GPU",
+    "Library/AI系统/二.AI硬件体系结构/AI芯片基础/CPU指令集架构.md",
+    "Library/AI系统/二.AI硬件体系结构/AI芯片基础/images",
+    "Library/AI系统/二.AI硬件体系结构/AI芯片基础",
+    "Library/AI系统/二.AI硬件体系结构/AI计算体系概述/计算之比特位宽to be done.md",
+    "Library/AI系统/二.AI硬件体系结构/AI计算体系概述/核心计算之矩阵乘（to be done).md",
+    "Library/AI系统/二.AI硬件体系结构/AI计算体系概述/AI计算模式(下).md",
+    "Library/AI系统/二.AI硬件体系结构/AI计算体系概述/AI计算模式(上).md",
+    "Library/AI系统/二.AI硬件体系结构/AI计算体系概述/课程内容.md",
+    "Library/AI系统/二.AI硬件体系结构/AI 硬件体系架构概述.md",
     "未命名.canvas"
   ]
 }

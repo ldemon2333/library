@@ -4,9 +4,16 @@
   "useTab": true,
   "rightToLeft": false,
   "vimMode": false,
-  "promptDelete": true,
+  "promptDelete": false,
   "alwaysUpdateLinks": true,
   "trashOption": "none",
   "newFileLocation": "current",
-  "strictLineBreaks": true
+  "strictLineBreaks": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }
