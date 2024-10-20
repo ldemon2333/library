@@ -4,20 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "401ca38b632508f4",
+        "id": "dec8cf632ea315ce",
         "type": "tabs",
         "children": [
           {
-            "id": "05e7d06743de03be",
+            "id": "33928bfe38c3bd70",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Library/书籍/脑机穿越.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -40,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -55,7 +54,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -63,7 +64,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
@@ -87,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Library/书籍/脑机穿越.md",
+                "file": "Library/OS/操作系统：设计与实现/03.硬件视角的操作系统.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +98,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "03.硬件视角的操作系统 的反向链接列表"
             }
           },
           {
@@ -104,10 +109,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Library/书籍/脑机穿越.md",
+                "file": "Library/OS/操作系统：设计与实现/03.硬件视角的操作系统.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "03.硬件视角的操作系统 的出链列表"
             }
           },
           {
@@ -118,7 +125,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -126,9 +135,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Library/书籍/脑机穿越.md"
-              }
+              "state": {},
+              "icon": "lucide-list",
+              "title": "大纲"
             }
           }
         ],
@@ -151,54 +160,53 @@
       "auto-literature:AutoLiter": false
     }
   },
-  "active": "05e7d06743de03be",
+  "active": "33928bfe38c3bd70",
   "lastOpenFiles": [
-    "Library/Pytorch/Pytorch 官方文档.md",
+    "pdfs/Exploring Neuromorphic Computing Based on Spiking Neural Networks： Algorithms to Hardware.md",
+    "pdfs/images/Pasted image 20241020144818.png",
+    "pdfs/images/Pasted image 20241020144515.png",
+    "pdfs/images/Pasted image 20241020144404.png",
+    "pdfs/images/Pasted image 20241020144117.png",
+    "pdfs/images/Pasted image 20241020143640.png",
+    "pdfs/images/Pasted image 20241020142523.png",
+    "pdfs/images/Pasted image 20241020142024.png",
+    "pdfs/images/Pasted image 20241020142016.png",
+    "Library/OS/MakefileTutorial.md",
+    "Library/OS/images/Pasted image 20241020141337.png",
+    "Library/OS/images/Pasted image 20241020141031.png",
+    "Library/OS/printf是怎么输出到控制台.md",
+    "Library/命令行的艺术.md",
+    "Library/UNIX tutorial.md",
+    "Library/OS/Linux命令.md",
+    "Library/OS/Linux Tools Quick Tutorial.md",
+    "Library/OS/Makefile.md",
+    "Library/OS/操作系统：设计与实现/04. 数学视角的操作系统.md",
+    "Library/OS/操作系统：设计与实现/03.硬件视角的操作系统.md",
+    "Library/OSTEP/4 Processes.md",
+    "Library/OSTEP/images",
+    "未命名",
+    "Library/OSTEP/2 Introduction.md",
+    "Library/OSTEP",
+    "Library/OS/Quick Guide to gdb： The GNU Debugger.md",
+    "Library/OS/gdb调试.md",
+    "test.md",
+    "pdfs/Brain-Inspired Computing：A Systematic Survey and Future Trends.md",
+    "README.md",
     "Library/书籍/脑机穿越.md",
-    "Library/书籍",
-    "Library/Pytorch",
-    "Library/snnTorch/T5：FCN.md",
-    "Library/snnTorch/Tutorial 1 - Spike Encoding.md",
-    "Library/snnTorch/images/Pasted image 20241011210501.png",
-    "Library/snnTorch/images/Pasted image 20241011203003.png",
-    "Library/snnTorch/images/Pasted image 20241011202815.png",
-    "Library/snnTorch/images/Pasted image 20241011202552.png",
-    "Library/snnTorch/T4：二阶脉冲神经元模型.md",
-    "Library/神经动力学/3.1 突触.md",
-    "Library/神经动力学/images/Pasted image 20241011200203.png",
-    "Library/神经动力学/images/Pasted image 20241011195910.png",
-    "Library/神经动力学/images",
-    "Library/脑机/Tuning cureve 绘制.md",
-    "Library/脑机/脑机接口技术综述.md",
-    "Library/脑机/SNN.md",
-    "Library/神经动力学",
-    "Library/未命名.md",
-    "Library/snnTorch/神经突触机理.md",
-    "Library/snnTorch/images/Pasted image 20241011191105.png",
-    "Library/BrainScience/2.md",
-    "Library/BrainScience/1.md",
-    "Library/snnTorch/images/Pasted image 20241011175450.png",
-    "Library/snnTorch/images/Pasted image 20241011175023.png",
-    "Library/snnTorch/images/Pasted image 20241011174340.png",
-    "Library/snnTorch/Tutorial 3 前馈SNN.md",
-    "Library/snnTorch/Tutorial 2 - The Leaky Integrate-and-Fire Neuron.md",
-    "pdfs/Training Spiking Neural Networks Using Lessons From Deep Learning.md",
-    "pdfs/Training_Spiking_Neural_Networks_Using_Lessons_From_Deep_Learning.pdf",
-    "Library/AI系统/二.AI硬件体系结构/AI计算体系概述/关键设计指标.md",
-    "Library/AI系统/二.AI硬件体系结构/图像处理器GPU/GPU 工作原理.md",
-    "Library/AI系统/二.AI硬件体系结构/图像处理器GPU/images",
-    "未命名.md",
-    "Library/AI系统/二.AI硬件体系结构/图像处理器GPU/未命名",
-    "Library/AI系统/二.AI硬件体系结构/图像处理器GPU",
-    "Library/AI系统/二.AI硬件体系结构/AI芯片基础/CPU指令集架构.md",
-    "Library/AI系统/二.AI硬件体系结构/AI芯片基础/images",
-    "Library/AI系统/二.AI硬件体系结构/AI芯片基础",
-    "Library/AI系统/二.AI硬件体系结构/AI计算体系概述/计算之比特位宽to be done.md",
-    "Library/AI系统/二.AI硬件体系结构/AI计算体系概述/核心计算之矩阵乘（to be done).md",
-    "Library/AI系统/二.AI硬件体系结构/AI计算体系概述/AI计算模式(下).md",
-    "Library/AI系统/二.AI硬件体系结构/AI计算体系概述/AI计算模式(上).md",
-    "Library/AI系统/二.AI硬件体系结构/AI计算体系概述/课程内容.md",
-    "Library/AI系统/二.AI硬件体系结构/AI 硬件体系架构概述.md",
+    "Library/OS/compile.md",
+    "Library/OS/操作系统：设计与实现/01绪论.md",
+    "Library/OS/操作系统：设计与实现/操作系统：设计与实现.md",
+    "Library/OS/操作系统：设计与实现/02应用视角的操作系统.md",
+    "Library/OS/操作系统：设计与实现/M1：打印进程树.md",
+    "Log/汇报2024-.md",
+    "Log/2024-10-16.md",
+    "Library/OS/操作系统：设计与实现/images",
+    "Library/MIT 6.S081/images",
+    "Library/MIT 6.S081",
+    "Library/Pytorch/images",
+    "Library/matrixcalc.pdf",
+    "Library/AI系统/二.AI硬件体系结构/英伟达GPU详解/images",
+    "Library/AI系统/二.AI硬件体系结构/英伟达GPU详解",
     "未命名.canvas"
   ]
 }

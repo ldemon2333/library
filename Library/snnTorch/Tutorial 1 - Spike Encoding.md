@@ -1,4 +1,4 @@
-Learn how to use snnTorch to：
+	Learn how to use snnTorch to：
 - 转换数据集into spiking datasets
 - 如何可视化spiking datasets
 - how to generate random spike trains.
