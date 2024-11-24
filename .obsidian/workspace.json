@@ -4,17 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "dec8cf632ea315ce",
+        "id": "637886bf8cbb585a",
         "type": "tabs",
         "children": [
           {
-            "id": "33928bfe38c3bd70",
+            "id": "5794ceceb3e4e86f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Log/汇报 2024-11-.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "汇报 2024-11-"
             }
           }
         ]
@@ -48,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:\"Library/OS/OSTEP/\" CFS",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Library/OS/操作系统：设计与实现/03.硬件视角的操作系统.md",
+                "file": "Library/OS/The Linux Boot Process.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "03.硬件视角的操作系统 的反向链接列表"
+              "title": "The Linux Boot Process 的反向链接列表"
             }
           },
           {
@@ -109,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Library/OS/操作系统：设计与实现/03.硬件视角的操作系统.md",
+                "file": "Library/OS/The Linux Boot Process.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "03.硬件视角的操作系统 的出链列表"
+              "title": "The Linux Boot Process 的出链列表"
             }
           },
           {
@@ -135,9 +140,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "Library/Lynxi/Lyngor 用户指南.md"
+              },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Lyngor 用户指南 的大纲"
             }
           }
         ],
@@ -160,53 +167,54 @@
       "auto-literature:AutoLiter": false
     }
   },
-  "active": "33928bfe38c3bd70",
+  "active": "5794ceceb3e4e86f",
   "lastOpenFiles": [
-    "pdfs/Exploring Neuromorphic Computing Based on Spiking Neural Networks： Algorithms to Hardware.md",
-    "pdfs/images/Pasted image 20241020144818.png",
-    "pdfs/images/Pasted image 20241020144515.png",
-    "pdfs/images/Pasted image 20241020144404.png",
-    "pdfs/images/Pasted image 20241020144117.png",
-    "pdfs/images/Pasted image 20241020143640.png",
-    "pdfs/images/Pasted image 20241020142523.png",
-    "pdfs/images/Pasted image 20241020142024.png",
-    "pdfs/images/Pasted image 20241020142016.png",
-    "Library/OS/MakefileTutorial.md",
-    "Library/OS/images/Pasted image 20241020141337.png",
-    "Library/OS/images/Pasted image 20241020141031.png",
-    "Library/OS/printf是怎么输出到控制台.md",
-    "Library/命令行的艺术.md",
-    "Library/UNIX tutorial.md",
-    "Library/OS/Linux命令.md",
-    "Library/OS/Linux Tools Quick Tutorial.md",
-    "Library/OS/Makefile.md",
-    "Library/OS/操作系统：设计与实现/04. 数学视角的操作系统.md",
-    "Library/OS/操作系统：设计与实现/03.硬件视角的操作系统.md",
-    "Library/OSTEP/4 Processes.md",
-    "Library/OSTEP/images",
+    "Log/images/Pasted image 20241121213035.png",
+    "Log/images/Pasted image 20241121212939.png",
+    "Log/images/Pasted image 20241121212933.png",
+    "Log/images/Pasted image 20241121211243.png",
+    "Log/images/Pasted image 20241121210723.png",
+    "Log/images/Pasted image 20241121210721.png",
+    "Log/images/Pasted image 20241121210720.png",
+    "Library/Lynxi/Lyngor 用户指南.md",
+    "Library/Lynxi/Lyngor 类脑用户指南.md",
+    "Log/汇报 2024-11-.md",
+    "Library/Lynxi/LynSDK开发指南（Python）.md",
+    "Library/Lynxi/LynSDK推理工具（Model Tool）用户指南.md",
+    "Library/指针.md",
+    "Library/OS/C 内联汇编.md",
+    "Library/OS/AT&T 汇编.md",
+    "Library/OS/images/Pasted image 20241120200250.png",
+    "Library/OS/images/Pasted image 20241120195914.png",
+    "Library/OS/images/Pasted image 20241120195838.png",
+    "Library/OS/images/Pasted image 20241120185242.png",
+    "Library/OS/操作系统：设计与实现/23 处理器调度.md",
+    "Library/OS/OSTEP/09 Scheduling：Proportional Share.md",
+    "Library/OS/GDB/gdb-cheat-sheet.pdf",
+    "Library/OS/操作系统：设计与实现/M2 协程库(libco).md",
+    "Library/OS/man文档/clone 2.md",
+    "Library/OS/man文档/fork 2.md",
+    "Library/Lynxi/LynSNN网络结构描述文件说明书.md",
+    "Library/OS/操作系统：设计与实现/M3 GPT-2 并行推理.md",
+    "Library/OS/操作系统：设计与实现/M1 打印进程树.md",
+    "Library/OS/man文档/open 2.md",
+    "Library/System/CSAPP/08 异常控制流.md",
+    "Library/OS/man文档/wait 2.md",
+    "Library/OS/man文档/mmap 2.md",
+    "Library/OS/OSTEP/16 Segmentation.md",
+    "Library/OS/OSTEP/15 Mechanism：Address Translation.md",
+    "Library/OS/MIT 6.S081/第1章操作系统接口.md",
+    "Library/OS/操作系统：设计与实现/22 进程的实现.md",
+    "Library/OS/操作系统：设计与实现/21 系统调用、中断和上下文切换.md",
+    "Library/Lynxi/images",
+    "Library/Lynxi",
     "未命名",
-    "Library/OSTEP/2 Introduction.md",
-    "Library/OSTEP",
-    "Library/OS/Quick Guide to gdb： The GNU Debugger.md",
-    "Library/OS/gdb调试.md",
-    "test.md",
-    "pdfs/Brain-Inspired Computing：A Systematic Survey and Future Trends.md",
-    "README.md",
-    "Library/书籍/脑机穿越.md",
-    "Library/OS/compile.md",
-    "Library/OS/操作系统：设计与实现/01绪论.md",
-    "Library/OS/操作系统：设计与实现/操作系统：设计与实现.md",
-    "Library/OS/操作系统：设计与实现/02应用视角的操作系统.md",
-    "Library/OS/操作系统：设计与实现/M1：打印进程树.md",
-    "Log/汇报2024-.md",
-    "Log/2024-10-16.md",
-    "Library/OS/操作系统：设计与实现/images",
-    "Library/MIT 6.S081/images",
-    "Library/MIT 6.S081",
-    "Library/Pytorch/images",
-    "Library/matrixcalc.pdf",
-    "Library/AI系统/二.AI硬件体系结构/英伟达GPU详解/images",
-    "Library/AI系统/二.AI硬件体系结构/英伟达GPU详解",
+    "pdfs/Brain-Inspired_Computing_A_Systematic_Survey_and_Future_Trends.pdf",
+    "pdfs/A review of basic software for brain‑inspired computing.pdf",
+    "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.pdf",
+    "pdfs/Exploring Neuromorphic Computing Based on Spiking Neural Networks：Algorithms to Hardware.pdf",
+    "pdfs/Darwin3：a large-scale neuromorphic chip with a novel ISA and on-chip learning.pdf",
+    "pdfs/Darwin-S：A Reference Software Architecture for Brain-Inspired Computers.pdf",
     "未命名.canvas"
   ]
 }
