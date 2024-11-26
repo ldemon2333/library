@@ -1,4 +1,4 @@
 {
   "destination": "system",
-  "excluded": "library/pdfs"
+  "excluded": "pdfs/"
 }

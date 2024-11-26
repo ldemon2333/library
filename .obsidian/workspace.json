@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "637886bf8cbb585a",
+        "id": "a21b150e92bcc6b5",
         "type": "tabs",
         "children": [
           {
-            "id": "5794ceceb3e4e86f",
+            "id": "1f7cf72d95826b48",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Log/汇报 2024-11-.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "汇报 2024-11-"
+              "title": "新标签页"
             }
           }
         ]
@@ -53,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"Library/OS/OSTEP/\" CFS",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,8 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1aaefe1a03615f71",
@@ -141,10 +135,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Library/Lynxi/Lyngor 用户指南.md"
+                "file": "Log/汇报 2024-11-26.md"
               },
               "icon": "lucide-list",
-              "title": "Lyngor 用户指南 的大纲"
+              "title": "汇报 2024-11-26 的大纲"
             }
           }
         ],
@@ -164,57 +158,58 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "workspaces:管理工作区布局": false,
-      "auto-literature:AutoLiter": false
+      "auto-literature:AutoLiter": false,
+      "obsidian-file-cleaner:清理文件": false
     }
   },
-  "active": "5794ceceb3e4e86f",
+  "active": "1f7cf72d95826b48",
   "lastOpenFiles": [
-    "Log/images/Pasted image 20241121213035.png",
-    "Log/images/Pasted image 20241121212939.png",
-    "Log/images/Pasted image 20241121212933.png",
-    "Log/images/Pasted image 20241121211243.png",
-    "Log/images/Pasted image 20241121210723.png",
-    "Log/images/Pasted image 20241121210721.png",
-    "Log/images/Pasted image 20241121210720.png",
-    "Library/Lynxi/Lyngor 用户指南.md",
-    "Library/Lynxi/Lyngor 类脑用户指南.md",
-    "Log/汇报 2024-11-.md",
-    "Library/Lynxi/LynSDK开发指南（Python）.md",
-    "Library/Lynxi/LynSDK推理工具（Model Tool）用户指南.md",
-    "Library/指针.md",
-    "Library/OS/C 内联汇编.md",
-    "Library/OS/AT&T 汇编.md",
-    "Library/OS/images/Pasted image 20241120200250.png",
-    "Library/OS/images/Pasted image 20241120195914.png",
-    "Library/OS/images/Pasted image 20241120195838.png",
-    "Library/OS/images/Pasted image 20241120185242.png",
-    "Library/OS/操作系统：设计与实现/23 处理器调度.md",
-    "Library/OS/OSTEP/09 Scheduling：Proportional Share.md",
+    "test.md",
+    "README.md",
+    "Log/2024-11-26.md",
+    "Log/Template.md",
+    "Library/线程池.md",
+    "Library/通配符.md",
+    "Library/内存池.md",
+    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images/Pasted image 20240910102213.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images/Pasted image 20240909225734.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images/Pasted image 20240909225627.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/机器学习/images/Pasted image 20240916140015.png",
+    "Library/鸢尾花书：从加减乘除到机器学习/机器学习/Ch02 回归分析.md",
+    "Library/天池/天猫复购预测/reduceMemory操作.md",
+    "Library/健身/images/Pasted image 20240703163710.png",
+    "Library/健身/images/Pasted image 20240703163257.png",
+    "Library/机器学习/images/Pasted image 20240809151200.png",
+    "Library/机器学习/images/Pasted image 20240809151107.png",
+    "Library/机器学习/images/Pasted image 20240625105332.png",
+    "Library/机器学习/images/image-20240623214437257.png",
+    "Log/2024-06-25.md",
+    "Library/机器学习/支持向量机原理 (二) 线性支持向量机的软间隔最大化模型.md",
+    "Library/机器学习/谱聚类（spectral clustering）原理总结.md",
+    "Library/机器学习/逻辑回归（LR）.md",
+    "Library/机器学习/精确率与召回率，RoC曲线与PR曲线 二类分类.md",
+    "Library/机器学习/集成学习之Adaboost算法原理小结.md",
+    "Library/机器学习/集成学习.md",
     "Library/OS/GDB/gdb-cheat-sheet.pdf",
-    "Library/OS/操作系统：设计与实现/M2 协程库(libco).md",
-    "Library/OS/man文档/clone 2.md",
-    "Library/OS/man文档/fork 2.md",
-    "Library/Lynxi/LynSNN网络结构描述文件说明书.md",
-    "Library/OS/操作系统：设计与实现/M3 GPT-2 并行推理.md",
-    "Library/OS/操作系统：设计与实现/M1 打印进程树.md",
-    "Library/OS/man文档/open 2.md",
-    "Library/System/CSAPP/08 异常控制流.md",
-    "Library/OS/man文档/wait 2.md",
-    "Library/OS/man文档/mmap 2.md",
-    "Library/OS/OSTEP/16 Segmentation.md",
-    "Library/OS/OSTEP/15 Mechanism：Address Translation.md",
-    "Library/OS/MIT 6.S081/第1章操作系统接口.md",
-    "Library/OS/操作系统：设计与实现/22 进程的实现.md",
-    "Library/OS/操作系统：设计与实现/21 系统调用、中断和上下文切换.md",
-    "Library/Lynxi/images",
-    "Library/Lynxi",
-    "未命名",
+    "pdfs/Training_Spiking_Neural_Networks_Using_Lessons_From_Deep_Learning.pdf",
+    "Library/matrixcalc.pdf",
+    "pdfs/Exploring Neuromorphic Computing Based on Spiking Neural Networks：Algorithms to Hardware.pdf",
+    "pdfs/Darwin-S：A Reference Software Architecture for Brain-Inspired Computers.pdf",
+    "pdfs/Darwin3：a large-scale neuromorphic chip with a novel ISA and on-chip learning.pdf",
     "pdfs/Brain-Inspired_Computing_A_Systematic_Survey_and_Future_Trends.pdf",
     "pdfs/A review of basic software for brain‑inspired computing.pdf",
     "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.pdf",
-    "pdfs/Exploring Neuromorphic Computing Based on Spiking Neural Networks：Algorithms to Hardware.pdf",
-    "pdfs/Darwin3：a large-scale neuromorphic chip with a novel ISA and on-chip learning.pdf",
-    "pdfs/Darwin-S：A Reference Software Architecture for Brain-Inspired Computers.pdf",
+    "Library/OS/man文档/wait 2.md",
+    "Library/OS/man文档/sigaction 2.md",
+    "Library/OS/man文档/fork 2.md",
+    "Library/OS/man文档/fcntl 2.md",
+    "Library/OS/man文档/execve 2.md",
+    "Library/OS/man文档/dup 2.md",
+    "Library/OS/man文档/core 5.md",
+    "Library/System/CSAPP/07 链接.md",
+    "Log/2024-06-26.md",
+    "pdfs/Brain-Inspired Computing：A Systematic Survey and Future Trends.md",
+    "pdfs/Using_goal_driven_deep_learning_models_t.pdf",
     "未命名.canvas"
   ]
 }
