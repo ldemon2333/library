@@ -4,20 +4,45 @@
     "type": "split",
     "children": [
       {
-        "id": "a21b150e92bcc6b5",
+        "id": "1b67048c69a5d79b",
         "type": "tabs",
         "children": [
           {
-            "id": "1f7cf72d95826b48",
+            "id": "586591ccbb458a85",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "SNN on Edge/Hardware Implementation for Spiking Neural Networks on Edge Devices.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
+              "pinned": true,
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Hardware Implementation for Spiking Neural Networks on Edge Devices"
+            }
+          },
+          {
+            "id": "d9307311581e77d6",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SNN on Edge/时间线.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "时间线"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,11 +73,11 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
+                "query": "std",
+                "matchingCase": true,
+                "explainSearch": true,
                 "collapseAll": false,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
@@ -135,10 +160,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Log/汇报 2024-11-26.md"
+                "file": "SNN on Edge/时间线.md"
               },
               "icon": "lucide-list",
-              "title": "汇报 2024-11-26 的大纲"
+              "title": "时间线 的大纲"
             }
           }
         ],
@@ -157,59 +182,57 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "workspaces:管理工作区布局": false,
-      "auto-literature:AutoLiter": false,
-      "obsidian-file-cleaner:清理文件": false
+      "workspaces:管理工作区布局": false
     }
   },
-  "active": "1f7cf72d95826b48",
+  "active": "d9307311581e77d6",
   "lastOpenFiles": [
-    "test.md",
-    "README.md",
-    "Log/2024-11-26.md",
-    "Log/Template.md",
-    "Library/线程池.md",
-    "Library/通配符.md",
-    "Library/内存池.md",
-    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images/Pasted image 20240910102213.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images/Pasted image 20240909225734.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/编程不难/images/Pasted image 20240909225627.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/机器学习/images/Pasted image 20240916140015.png",
-    "Library/鸢尾花书：从加减乘除到机器学习/机器学习/Ch02 回归分析.md",
-    "Library/天池/天猫复购预测/reduceMemory操作.md",
-    "Library/健身/images/Pasted image 20240703163710.png",
-    "Library/健身/images/Pasted image 20240703163257.png",
-    "Library/机器学习/images/Pasted image 20240809151200.png",
-    "Library/机器学习/images/Pasted image 20240809151107.png",
-    "Library/机器学习/images/Pasted image 20240625105332.png",
-    "Library/机器学习/images/image-20240623214437257.png",
-    "Log/2024-06-25.md",
-    "Library/机器学习/支持向量机原理 (二) 线性支持向量机的软间隔最大化模型.md",
-    "Library/机器学习/谱聚类（spectral clustering）原理总结.md",
-    "Library/机器学习/逻辑回归（LR）.md",
-    "Library/机器学习/精确率与召回率，RoC曲线与PR曲线 二类分类.md",
-    "Library/机器学习/集成学习之Adaboost算法原理小结.md",
-    "Library/机器学习/集成学习.md",
-    "Library/OS/GDB/gdb-cheat-sheet.pdf",
-    "pdfs/Training_Spiking_Neural_Networks_Using_Lessons_From_Deep_Learning.pdf",
+    "Log/2024-12-08.md",
+    "思考/类脑计算的困境和出路.md",
+    "思考",
+    "Library/OS/Linux 内核/进程管理和调度.md",
+    "Library/OS/Linux 内核/images/Pasted image 20241209000518.png",
+    "Library/OS/Linux 内核/images/Pasted image 20241209000159.png",
+    "Library/OS/Linux 内核/images/Pasted image 20241208235457.png",
+    "Library/OS/Linux 内核/images/Pasted image 20241208235115.png",
+    "Library/OS/Linux 内核/images/Pasted image 20241208234721.png",
+    "Library/OS/Linux 内核/images/Pasted image 20241208234615.png",
+    "Library/OS/Linux 内核/images/Pasted image 20241208234143.png",
+    "Library/OS/Linux 内核/images/Pasted image 20241208234142.png",
+    "Library/OS/Linux 内核/images/Pasted image 20241208234140.png",
+    "Library/OS/Linux 内核/images/Pasted image 20241208233958.png",
+    "Library/OS/Linux 内核/内核链表.md",
+    "Library/C++/教程.md",
+    "Library/C++/function.md",
+    "Library/C++/new.md",
+    "Library/C++/vector 容器.md",
+    "Library/C++/&.md",
+    "Library/C++/priority_queue.md",
+    "Library/技术栈.md",
+    "SNN on Edge/时间线.md",
+    "SNN on Edge/Hardware Implementation for Spiking Neural Networks on Edge Devices.md",
+    "SNN on Edge/A 640M pixel s 3.65mW Sparse Event-Driven Neuromorphic Object Recognition Processor with On-Chip Learning.md",
+    "SNN on Edge/A 3.43TOPS.md",
+    "SNN on Edge/Nengo and Low-Power AI Hardware for Robust, Embedded Neurorobotics.md",
+    "SNN on Edge/N2A.md",
+    "SNN on Edge/Implementing NEF Neural Networks on Embedded FPGAs.md",
+    "SNN on Edge/Toward a Distributed Data Flow Platform for the Web of Things (Distributed Node-RED).md",
+    "SNN on Edge/Caspian A Neuromorphic Development Platform.md",
+    "SNN on Edge/μBrain An event-driven and fully synthesizable architecture for spiking neural networks.md",
+    "SNN on Edge/Nengo a Python tool for building large-scale functional brain models.md",
+    "SNN on Edge/Developing IoT Applications Using Spiking Neural Networks Framework.md",
+    "SNN on Edge/Human activity recognition.md",
+    "SNN on Edge/Loihi.md",
+    "SNN on Edge/TrueNorth.md",
+    "摄影/images",
+    "摄影",
+    "Library/C++/未命名",
+    "SNN on Edge/images",
+    "SNN on Edge",
+    "Library/C",
+    "Library/每日一题",
     "Library/matrixcalc.pdf",
-    "pdfs/Exploring Neuromorphic Computing Based on Spiking Neural Networks：Algorithms to Hardware.pdf",
-    "pdfs/Darwin-S：A Reference Software Architecture for Brain-Inspired Computers.pdf",
-    "pdfs/Darwin3：a large-scale neuromorphic chip with a novel ISA and on-chip learning.pdf",
-    "pdfs/Brain-Inspired_Computing_A_Systematic_Survey_and_Future_Trends.pdf",
-    "pdfs/A review of basic software for brain‑inspired computing.pdf",
-    "pdfs/A novel interface for cortical columnar neuromodulation with multipoint infrared neural stimulation.pdf",
-    "Library/OS/man文档/wait 2.md",
-    "Library/OS/man文档/sigaction 2.md",
-    "Library/OS/man文档/fork 2.md",
-    "Library/OS/man文档/fcntl 2.md",
-    "Library/OS/man文档/execve 2.md",
-    "Library/OS/man文档/dup 2.md",
-    "Library/OS/man文档/core 5.md",
-    "Library/System/CSAPP/07 链接.md",
-    "Log/2024-06-26.md",
-    "pdfs/Brain-Inspired Computing：A Systematic Survey and Future Trends.md",
-    "pdfs/Using_goal_driven_deep_learning_models_t.pdf",
+    "Library/OS/Linux 内核/images",
     "未命名.canvas"
   ]
 }
