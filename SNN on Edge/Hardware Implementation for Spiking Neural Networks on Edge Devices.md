@@ -46,7 +46,7 @@ Therefore, many existing neuromorphic hardware also exploit the temporal sparsit
 与 TeNNLab 类似，有几种神经计算框架提供高级接口来配置 SNN 架构和超参数，以便在边缘的各种神经形态硬件上进行模拟 [57–61]。==还提出了节能硬件实现，作为边缘设备上几个高级接口的后端 [8, 50, 62]。==开发了一种 SNN 协处理器，它执行从板上主处理器发出的一组定制命令，以便能够对具有任意数量神经元、突触和层的 SNN 架构进行编程。还可以使用定制命令配置 SNN 的超参数，而无需重新编程硬件实现 [38]。表 2 列出了针对边缘物联网应用的选定灵活神经形态硬件。这些硬件实现能够使用各种学习算法执行片上学习，并消耗少量片上内存。
 ![[Pasted image 20241206125423.png]]
 
-[3] Roy A, Venkataramani S, Gala N, Sen S, Veezhinathan K, Raghunathan A (2017) [[A programmable event-driven architecture for evaluating spiking neural networks]]. In: ISLPED, IEEE, Piscataway, pp 1–6. https://doi.org/10.1109/ISLPED.2017.8009176  
+[3] Roy A, Venkataramani S, Gala N, Sen S, Veezhinathan K, Raghunathan A (2017) [[A Programmable Event-driven Architecture for Evaluating Spiking Neural Networks]]. In: ISLPED, IEEE, Piscataway, pp 1–6. https://doi.org/10.1109/ISLPED.2017.8009176  
 
 [7] Stuijt J, Sifalakis M, Yousefzadeh A, Corradi F (2021) [[μBrain An event-driven and fully synthesizable architecture for spiking neural networks]]. Front Neurosci 15:538. https://doi.org/10.3389/fnins.2021.664208
 

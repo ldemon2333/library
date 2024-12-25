@@ -96,4 +96,37 @@ Key: 3, Value: three
 - 哈希表的性能依赖于良好的哈希函数，以避免过多的哈希冲突。
 - 与 `std::map` 相比，`unordered_map` 在元素数量较少时可能占用更多的内存。
 
+要在 `unordered_map<string, vector<int>> dict` 中查看是否包含键 `s`，你可以使用 `unordered_map` 提供的 `find()` 方法或 `count()` 方法。
+
+### 使用 `find()` 方法：
+
+`find()` 方法会返回一个迭代器，如果找到了键，返回指向该元素的迭代器；如果找不到，返回 `dict.end()`。
+
+```cpp
+if (dict.find(s) != dict.end()) {
+    // dict 中包含键 s
+} else {
+    // dict 中不包含键 s
+}
+```
+
+### 使用 `count()` 方法：
+
+`count()` 方法返回一个整数，表示键出现的次数，对于 `unordered_map` 来说，返回值只能是 0 或 1。若键存在，则返回 1，否则返回 0。
+
+```cpp
+if (dict.count(s) > 0) {
+    // dict 中包含键 s
+} else {
+    // dict 中不包含键 s
+}
+```
+
+### 两者比较：
+
+- `find()` 更灵活，因为你可以在找到键时直接访问对应的值。
+- `count()` 更简单，只能判断键是否存在，不提供直接访问值的功能。
+
+通常，如果你只是想检查键是否存在，`count()` 更简洁；如果需要在找到键时进一步处理值，`find()` 会更合适。
+
 

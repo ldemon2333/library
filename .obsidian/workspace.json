@@ -4,41 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "1b67048c69a5d79b",
+        "id": "cdddff3732454255",
         "type": "tabs",
         "children": [
           {
-            "id": "586591ccbb458a85",
+            "id": "64a29d929c767372",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SNN on Edge/Hardware Implementation for Spiking Neural Networks on Edge Devices.md",
+                "file": "SNN on Edge/论文.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "pinned": true,
               "icon": "lucide-file",
-              "title": "Hardware Implementation for Spiking Neural Networks on Edge Devices"
+              "title": "论文"
             }
           },
           {
-            "id": "d9307311581e77d6",
+            "id": "3526e8784f643a78",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SNN on Edge/时间线.md",
+                "file": "Library/OS/OSTEP/39 Files and Directories.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
-              "pinned": true,
               "icon": "lucide-file",
-              "title": "时间线"
+              "title": "39 Files and Directories"
             }
           }
         ],
@@ -73,11 +71,11 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "std",
-                "matchingCase": true,
-                "explainSearch": true,
+                "query": "dup2",
+                "matchingCase": false,
+                "explainSearch": false,
                 "collapseAll": false,
-                "extraContext": true,
+                "extraContext": false,
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
@@ -94,11 +92,13 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1aaefe1a03615f71",
@@ -160,10 +160,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SNN on Edge/时间线.md"
+                "file": "Library/OS/XV6/3 Page tables.md"
               },
               "icon": "lucide-list",
-              "title": "时间线 的大纲"
+              "title": "3 Page tables 的大纲"
             }
           }
         ],
@@ -185,54 +185,54 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "d9307311581e77d6",
+  "active": "3526e8784f643a78",
   "lastOpenFiles": [
-    "Log/2024-12-08.md",
-    "思考/类脑计算的困境和出路.md",
-    "思考",
-    "Library/OS/Linux 内核/进程管理和调度.md",
-    "Library/OS/Linux 内核/images/Pasted image 20241209000518.png",
-    "Library/OS/Linux 内核/images/Pasted image 20241209000159.png",
-    "Library/OS/Linux 内核/images/Pasted image 20241208235457.png",
-    "Library/OS/Linux 内核/images/Pasted image 20241208235115.png",
-    "Library/OS/Linux 内核/images/Pasted image 20241208234721.png",
-    "Library/OS/Linux 内核/images/Pasted image 20241208234615.png",
-    "Library/OS/Linux 内核/images/Pasted image 20241208234143.png",
-    "Library/OS/Linux 内核/images/Pasted image 20241208234142.png",
-    "Library/OS/Linux 内核/images/Pasted image 20241208234140.png",
-    "Library/OS/Linux 内核/images/Pasted image 20241208233958.png",
-    "Library/OS/Linux 内核/内核链表.md",
-    "Library/C++/教程.md",
-    "Library/C++/function.md",
-    "Library/C++/new.md",
-    "Library/C++/vector 容器.md",
-    "Library/C++/&.md",
-    "Library/C++/priority_queue.md",
-    "Library/技术栈.md",
+    "SNN on Edge/EdgeMap.md",
+    "Log/2024-12-24.md",
+    "SNN on Edge/Optimal Mapping of Spiking Neural Network to Neuromorphic Hardware for Edge-AI.md",
+    "Log/Template.md",
+    "SNN on Edge/EC-SNN.md",
+    "SNN on Edge/论文.md",
+    "SNN on Edge/images/Pasted image 20241224233203.png",
+    "SNN on Edge/images/Pasted image 20241224232932.png",
+    "SNN on Edge/images/Pasted image 20241224232816.png",
+    "SNN on Edge/images/Pasted image 20241224232350.png",
+    "SNN on Edge/images/Pasted image 20241224230939.png",
     "SNN on Edge/时间线.md",
-    "SNN on Edge/Hardware Implementation for Spiking Neural Networks on Edge Devices.md",
-    "SNN on Edge/A 640M pixel s 3.65mW Sparse Event-Driven Neuromorphic Object Recognition Processor with On-Chip Learning.md",
-    "SNN on Edge/A 3.43TOPS.md",
-    "SNN on Edge/Nengo and Low-Power AI Hardware for Robust, Embedded Neurorobotics.md",
-    "SNN on Edge/N2A.md",
-    "SNN on Edge/Implementing NEF Neural Networks on Embedded FPGAs.md",
-    "SNN on Edge/Toward a Distributed Data Flow Platform for the Web of Things (Distributed Node-RED).md",
-    "SNN on Edge/Caspian A Neuromorphic Development Platform.md",
-    "SNN on Edge/μBrain An event-driven and fully synthesizable architecture for spiking neural networks.md",
-    "SNN on Edge/Nengo a Python tool for building large-scale functional brain models.md",
     "SNN on Edge/Developing IoT Applications Using Spiking Neural Networks Framework.md",
-    "SNN on Edge/Human activity recognition.md",
-    "SNN on Edge/Loihi.md",
-    "SNN on Edge/TrueNorth.md",
+    "SNN on Edge/An Efficient SNN Model Generation Method for IoT Edge Computing.md",
+    "Library/Python/argparse.md",
+    "SNN on Edge/images/Pasted image 20241224222747.png",
+    "Library/C++/教程.md",
+    "Library/技术栈.md",
+    "Library/System/Nand2Tetris/第9章高级语言.md",
+    "Library/System/Nand2Tetris/第7章Virtual Machine I堆栈运算.md",
+    "Library/C++/C++ primer plus/3 Dealing with Data.md",
+    "Library/C++/C++ primer plus/2 Setting Out to C++.md",
+    "Library/C Primer Plus 6th/fmax.md",
+    "Library/C++/string.md",
+    "Library/C++/C++ 标准库.md",
+    "Library/C++/unordered_map.md",
+    "Library/OS/XV6/7 schedule.md",
+    "Library/OS/XV6/RISC-V 架构中的异常与中断详解.md",
+    "Library/OS/XV6/Lab 6 CoW Fork for xv6.md",
+    "Library/OS/XV6/Lab 7 Multithreading.md",
+    "Library/OS/XV6/Lab 5 lazy page allocation.md",
+    "Library/OS/XV6/Lab 4 traps.md",
+    "Library/OS/XV6/images/Pasted image 20241224160059.png",
+    "Library/OS/XV6/images/Pasted image 20241224155354.png",
+    "Library/OS/XV6/images/Pasted image 20241224151914.png",
+    "Library/OS/XV6/images/Pasted image 20241223222857.png",
+    "Library/OS/GDB/gdb-cheat-sheet.pdf",
+    "Library/matrixcalc.pdf",
+    "Library/C Primer Plus 6th/images",
+    "Library/算法导论",
+    "Library/C++/C++ primer plus/images",
+    "Library/C++/C++ primer plus",
+    "思考",
     "摄影/images",
     "摄影",
-    "Library/C++/未命名",
     "SNN on Edge/images",
-    "SNN on Edge",
-    "Library/C",
-    "Library/每日一题",
-    "Library/matrixcalc.pdf",
-    "Library/OS/Linux 内核/images",
     "未命名.canvas"
   ]
 }
