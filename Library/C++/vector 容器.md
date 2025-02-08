@@ -115,6 +115,58 @@ int main() {
 }
 ```
 
+在 C++ 中，`std::vector` 的 `insert` 方法用于在向量中的指定位置插入元素。这个方法有几种不同的重载形式，具体取决于你插入的元素类型和数量。以下是常见的几种用法：
+
+### 1. 插入单个元素
+
+```cpp
+std::vector<int> vec = {1, 2, 3, 4};
+auto it = vec.begin() + 2;  // 定位到插入位置
+vec.insert(it, 100);  // 在第3个位置插入100
+
+// vec现在为: {1, 2, 100, 3, 4}
+```
+
+这里，`insert` 会在迭代器 `it` 所指向的位置插入值 `100`，并且原位置及后面的元素会后移一位。
+
+### 2. 插入多个相同的元素
+
+```cpp
+std::vector<int> vec = {1, 2, 3};
+auto it = vec.begin() + 1;  // 定位到插入位置
+vec.insert(it, 3, 100);  // 在第2个位置插入3个100
+
+// vec现在为: {1, 100, 100, 100, 2, 3}
+```
+
+此时，`insert` 插入了3个值 `100`，并且后续元素向后移动。
+
+### 3. 插入另一个容器的元素
+
+```cpp
+std::vector<int> vec1 = {1, 2, 3};
+std::vector<int> vec2 = {4, 5, 6};
+auto it = vec1.begin() + 1;  // 定位到插入位置
+vec1.insert(it, vec2.begin(), vec2.end());  // 插入 vec2 的所有元素
+
+// vec1现在为: {1, 4, 5, 6, 2, 3}
+```
+
+这里，`insert` 插入了另一个 `vector`（`vec2`）的元素，范围是从 `vec2.begin()` 到 `vec2.end()`。
+
+### 4. 插入一个范围的元素（例如，数组的元素）
+
+```cpp
+std::vector<int> vec = {1, 2, 3};
+int arr[] = {4, 5, 6};
+auto it = vec.begin() + 1;
+vec.insert(it, arr, arr + 3);  // 插入数组 arr 的所有元素
+
+// vec现在为: {1, 4, 5, 6, 2, 3}
+```
+
+这个用法类似于上面的插入另一个容器元素，但是插入的是数组的元素。
+
 
 
 

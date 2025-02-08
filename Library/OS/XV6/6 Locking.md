@@ -49,9 +49,11 @@ As an example of fine-grained locking, xv6 has a separate lock for each file, so
 ![[Pasted image 20241221201845.png]]
 
 # 6.4 Deadlock and lock ordering
-如果一块代码需要同时拥有多个锁，那么应该让其他需要相同锁的进程按照相同的顺序acquire这些锁，否则可能出现死锁。比如进程1和2都需要锁A和锁B，如果进程1先acquire了锁A，进程2acquire了锁B，那么接下来进程1需要acquire锁B，进程2需要acquire锁A，但是这两个都不能acquire到也无法release各自的锁，就会出现死锁。
+如果一块代码需要同时拥有多个锁，那么应该让其他需要相同锁的进程按照相同的顺序acquire这些锁，否则可能出现死锁。比如进程1和2都需要锁A和锁B，如果进程1先acquire了锁A，进程2acquire了锁B，那么接下来进程1需要acquire锁B，进程2需要acquire锁A，但是这两个都不能acquire到也无法release各自的锁，就会出现死锁。需要全局锁获取顺序意味着锁实际上是每个函数规范的一部分：调用者必须以一种能够按照约定的顺序获取锁的方式调用函数。
 
-由于`sleep`在xv6中的机制，xv6中有很多长度为2的lock-order。比如`consoleintr`中要求先获得`cons.lock`，当整行输入完毕之后再唤醒等待输入的进程，这需要获得睡眠进程的锁。xv6的文件系统中有一个很长的lock chain，如果要创建一个文件需要同时拥有文件夹的锁、新文件的inode的锁、磁盘块缓冲区的锁、磁盘驱动器的`vdisk_lock`的锁以及调用进程的`p->lock`的锁
+由于`sleep`在xv6中的机制，xv6中有很多长度为2的lock-order。比如`consoleintr`中要求先获得`cons.lock`，当整行输入完毕之后再唤醒等待输入的进程，这需要获得睡眠进程的锁。xv6的文件系统中有一个很长的lock chain. For example, creating a file requires simultaneously holding a lock on the directory, a lock on the new file's inode, a lock on a disk block buffer, the disk driver's `vdisk_lock`, and the calling process's `p->lock`.
+
+获得锁的顺序要一致。
 
 除了lock ordering之外，锁和中断的交互也可能造成死锁。比如当`sys_sleep`拥有`tickslock`时，发生定时器中断，定时器中断的handler也需要acquire`tickslock`，就会等待`sys_sleep`释放，但是因为在中断里面，只要不从中断返回`sys_sleep`就永远无法释放，因此造成了死锁。对这种死锁的解决方法是：==如果一个中断中需要获取某个特定的spinlock，那么当CPU获得了这个spinlock之后，该中断必须被禁用。xv6的机制则更加保守：当CPU获取了任意一个lock之后，将disable掉这个CPU上的所有中断（其他CPU的中断保持原样）。==当CPU不再拥有spinlock时，将通过`pop_off`重新使能中断.
 
@@ -92,17 +94,15 @@ If such a re-ordering occurred, there would be a window during which another CPU
 To tell the hardware and compiler not to perform such re-orderings, xv6 uses `__sync_synchronize()` in both `acquire` and `release`. `__sync_synchronize()` is a _memory barrier_: it tells the compiler and CPU to not reorder loads or stores across the barrier.
 
 # 6.8 Sleep locks
-spinlock的两个缺点：1. 如果一个进程拥有一个锁很长时间，另外一个企图acquire的进程将一直等待。2. 当一个进程拥有锁的时候，不允许把当前使用的CPU资源切换给其他线程，否则可能导致第二个线程也acquire这个锁，然后自旋，无法切回到原来的线程，从而无法release锁，从而导致死锁。Yielding while holding a spinlock is illegal because it might lead to deadlock if a second thread then tried to acquire the spinlock; since `acquire` doesn't yield the CPU, the second thread's spinning might prevent the first thread from running and releasing the lock. 持有锁时 yielding 也会违反持有自旋锁时必须关闭中断的要求。Thus we'd like a type of lock that yields the CPU while waiting to acquire, and allow yields (and interrupts) while the lock is held.
-
+spinlock的两个缺点：
+1. 如果一个进程拥有一个锁很长时间，另外一个企图acquire的进程将一直等待。
+2. 当一个进程拥有锁的时候，不允许把当前使用的CPU资源切换给其他线程，即不能够主动 yield，否则可能导致当前CPU的第二个线程也acquire这个锁，然后自旋，无法切回到原来的线程，从而无法release锁，从而导致死锁。当前CPU 拥有锁时，会关中断，这里中断包括软件中断，machine mode 下的时钟中断会被转化为软件中断，但是依旧被屏蔽，最终效果是当前 CPU 上获得锁之后，屏蔽任何中断，包括时钟中断，一直占有当前核的CPU资源直到完成任务。持有锁时 yielding 也会违反持有自旋锁时必须关闭中断的要求。Thus we'd like a type of lock that yields the CPU while waiting to acquire, and allow yields (and interrupts) while the lock is held.
 
 xv6提供了一种 _sleep-locks_，可以在试图`acquire`一个被占有的锁时`yield` CPU。spin-lock适合短时间的关键步骤，sleep-lock适合长时间的锁。 At a high level, a sleep-lock has a `locked` field that is protected by a spinlock, and `acquiresleep`'s call to `sleep` atomically yields the CPU and releases the spinlock. The result is that other threads can execute while `acquiresleep` waits.
 
-Because sleep-locks leave interr Beupts enabled, they cannot be used in interrupt handlers. Because `acquiresleep` may yield the CPU, sleep-locks cannot be used inside spinlock critical sections (though spinlocks can be used inside sleep-lock critical sections).
+Because sleep-locks leave interrupts enabled, they cannot be used in interrupt handlers. Because `acquiresleep` may yield the CPU, sleep-locks cannot be used inside spinlock critical sections (though spinlocks can be used inside sleep-lock critical sections).
 
-Spin-locks are best suited to short critical sections, since waiting for them wastes CPU time; sleep-locks well for lengthy operations.
-
-
-
+==Spin-locks are best suited to short critical sections, since waiting for them wastes CPU time; sleep-locks well for lengthy operations.==
 
 # 6.9 Real world
 尽管多年来一直在研究并发原语和并行性，但使用锁进行编程仍然具有挑战性。通常，最好将锁隐藏在同步队列等高级构造中，尽管 xv6 不会这样做。如果您使用锁进行编程，最好使用尝试识别竞争条件的工具，因为很容易错过需要锁的不变量。
@@ -119,7 +119,7 @@ Spin-locks are best suited to short critical sections, since waiting for them wa
 
 
 # 0. briefly speaking
-在 Xv6 运行的平台 SiFive_Unleashed 上，也有5个核心(**1个S51 Moniter Core和4个U54 Application Core**)，这说明在Xv6系统运行的过程中==考虑并发控制(Concurrency Control)是非常必要的==。锁机制是一种==最常见的管理并发程序正确性==的方案，它通过将==对临界区的访问串行化(serialize)==来保证并发操作的正确性。Xv6中在如下地方使用了锁机制，可以作为研究对象自己去一一体悟锁的重要性(比如画画这些情况下的锁链)：
+在 Xv6 运行的平台 SiFive_Unleashed 上，也有5个核心(**1个S51 Moniter Core和4个U54 Application Core**)，这说明在Xv6系统运行的过程中==考虑并发控制(Concurrency Control)是非常必要的==。锁机制是一种==最常见的管理并发程序正确性==的方案，它通过将==对临界区的访问串行化(serialize)==来保证并发操作的正确性。
 
 主要研究 Xv6 内核中自旋锁的实现，几个概况：
 - **死锁与锁定序**：如果一个代码路径可能会在同一时间持有多个锁，那么所有代码路径都应该按照相同的次序获取这些锁，否则就会有死锁的风险。不过这个很难，==尤其是锁链非常长的时候，保持所有进程持有锁的顺序是非常艰难的。==

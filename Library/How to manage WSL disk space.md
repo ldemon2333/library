@@ -4,12 +4,25 @@ WSL2 使用虚拟化平台，创建一个VHD格式来存储Linux文件。这些V
 
 WSL2自动调整这些 VHD 文件的大小以满足存储需求。默认情况下，WSL 2使用的每个 VHD 文件最初都被分配了1TB 的最大磁盘空间量(在 WSL 发布0.58.0之前，这个默认值被设置为512 GB max 和256 GB max)。
 
+# How to check your available disk space
+using `df` command
+
 To check available disk space, open a PowerShell command line and enter this command (replacing `<distribution-name>` with the actual distribution name):
 
 ```
 wsl.exe --system -d <distribution-name> df -h /mnt/wslg/distro
 ```
 
+If this command does not work try `wsl df -h /`
+
+The output will include:
+- **Filesystem**: Identifier for the VHD file system
+- **Size**: Total size of the disk (the maximum amount of space allocated to the VHD)
+- **Used**: Amount of space currently being used in the VHD
+- **Avail**: Amount of space left in the VHD (Allocated size minus amount used)
+- **Use%**: Percentage of disk space remaining (Used / Allocated size)
+- **Mounted on**: Directory path where the disk is mountedS
+![[Pasted image 20250110142102.png]]
 
 The virtual disk that WSL2 uses (`ext4.vhdx`) is what is known as "sparse". In other words, it appears to the underlying OS as its maximum available size, but it only takes up as much space on the host (Windows) disk as it currently needs.
 
@@ -48,3 +61,16 @@ I have tested and confirmed both the second and third techniques personally.
 
 第二种方法
 ![[Pasted image 20241025165227.png]]
+
+```
+wsl --shutdown
+diskpart
+# open window Diskpart
+select vdisk file= 下面这个
+attach vdisk readonly
+compact vdisk
+detach vdisk
+exit
+```
+
+"C:\Users\m1596\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04LTS_79rhkp1fndgsc\LocalState\ext4.vhdx"

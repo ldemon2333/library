@@ -1,8 +1,7 @@
 Devices generate interrupts, which are one type of trap. The kernel trap handling code recognizes when a device has raised an interrupt and calls the driver's interrupt handler
 
 Many device drivers execute code in two contexts: a top half that runs in a process's kernel thread, and a bottom half that executes at interrupt time. The top half is called via system calls such as `read` and `write` that want the device to perform I/O. This code may ask the hardware to start an operation (e.g., ask the disk to read a block); then the code waits for the operation to complete. Eventually the device completes the operation and raises an interrupt. The driver's interrupt handler, acting as the bottom half, figures out what operaion has completed, waked up a waiting process if appropriate, and tells the hardware to start work on any waiting next operaion.
-
-# 5.1 Code: Console inpute
+# 5.1 Code: Console input
 The console driver accpets characters typed by human, via the _UART_ serial-port hardware attached to the RISC-V. The console driver accumulates a line of input at a time, processing special input charactes such as backspace and control-u. User processes, such as the shell, use the `read` system call to fetch lines of input from the console. When you type input to xv6 in QEMU, youo keystrokes are delivered to xv6 by way of QEMU's simulated UART hardware.
 
 The UART hardware that the driver talks to is a 16550 chip emulated by QEMU. On a real computer, a 16550 would manage an RS232 serial link connecting to a terminal or other computer. When running QEMU, it's connected to your keyboard and display.

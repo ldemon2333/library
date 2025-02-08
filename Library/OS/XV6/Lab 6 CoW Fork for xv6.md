@@ -1,4 +1,4 @@
-虚拟内存提供了间接层：内核可以通过将 PTE 标记为无效或只读来拦截内存引用，从而导致页面错误，并且可以通过修改 PTE 来更改地址的含义。计算机系统中有句俗语：任何系统问题都可以通过间接层来解决。
+,fo虚拟内存提供了间接层：内核可以通过将 PTE 标记为无效或只读来拦截内存引用，从而导致页面错误，并且可以通过修改 PTE 来更改地址的含义。计算机系统中有句俗语：任何系统问题都可以通过间接层来解决。
 
 # The solution
 The goal of copy-on-write `fork()` is to defer allocating and copying physical memory pages for the child until the copies are actually needed, if ever.
