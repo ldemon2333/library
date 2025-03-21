@@ -41,7 +41,7 @@ Docker’s higher level of [architecture](https://docs.docker.com/get-started/o
 
 You can find all the [commands](https://github.com/docker/cli/tree/master/cli/command) in the repository if you are deeply interested.
 ![[Pasted image 20250111001749.png]]
-A state machine provides a good summary of how the various states of the container are converted [[1]](https://www.tiejiang.org/23394.html)
+A state machine provides a good summary of how the various states of the container are converted [[Library/Books/BrainScience/1]](https://www.tiejiang.org/23394.html)
 
 ## Docker Registry
 Docker Registry is a service that allows users to store and distribute the container images. It serves as a centralized or decentralized locations where users can push their images, making them publicly available, accessible to other team members or systems for deployment.
@@ -119,7 +119,7 @@ Total amount of data (on disk) that is used for the writable layer of each conta
 
 
 ## Docker Manifest
-[Docker Manifest](https://docs.docker.com/registry/spec/manifest-v2-2/), is a JSON-represented file that describes the image and provides metadata such as tags, a digital signature to verify the origin of the image, and documentation. Manifest is meant for consumption by a container runtime. [[4]](https://stackoverflow.com/a/47023753/5685796)
+[Docker Manifest](https://docs.docker.com/registry/spec/manifest-v2-2/), is a JSON-represented file that describes the image and provides metadata such as tags, a digital signature to verify the origin of the image, and documentation. Manifest is meant for consumption by a container runtime. [[4 make 与 new 的区别]](https://stackoverflow.com/a/47023753/5685796)
 
 Manifest Lists (aka “fat manifest”), are defined in the [v2.2 image specification](https://github.com/docker/distribution/blob/master/docs/spec/manifest-v2-2.md) and exist mainly for the purpose of supporting _multi-architecture_ and _multi-platform_ images within an image registry. There are several [IANA](https://www.iana.org/assignments/media-types/media-types.xhtml) [Media Types](https://docs.docker.com/registry/spec/manifest-v2-2/#media-types) that Docker currently supported. If you want to view, create, and push the new manifests list object types, [manifest-tool](https://github.com/estesp/manifest-tool) is the tool you are looking for.
 

@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "0a5ea90c031b41d1",
+        "id": "2029fac9bd6a03db",
         "type": "tabs",
         "children": [
           {
-            "id": "5a8d01c5fc37d8c8",
+            "id": "ac5eae7586c8b3aa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Library/Kubernetes/Concepts.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Concepts"
+              "title": "新标签页"
             }
           }
         ]
@@ -54,12 +49,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
-                "matchingCase": false,
+                "query": "path:\"Library/go 语言/\" select",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabeticalReverse"
               },
               "icon": "lucide-search",
               "title": "搜索"
@@ -141,13 +136,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Library/Kubernetes/Concepts.md",
+                "file": "Library/Golang/go 并发编程实战/6 网络爬虫框架.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Concepts 的大纲"
+              "title": "6 网络爬虫框架 的大纲"
             }
           }
         ],
@@ -166,57 +161,58 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "workspaces:管理工作区布局": false
+      "workspaces:管理工作区布局": false,
+      "obsidian-file-cleaner:清理文件": false
     }
   },
-  "active": "72970718fde73702",
+  "active": "ac5eae7586c8b3aa",
   "lastOpenFiles": [
-    "Library/images/Pasted image 20250106180733.png",
-    "Library/images/Pasted image 20241026001821.png",
-    "Library/images/Pasted image 20241025165227.png",
-    "Library/DeepLearning/深度学习.md",
-    "Library/Darwin/系统架构图.md",
-    "Library/Books/脑机穿越.md",
-    "Library/图神经网络GNN/图神经网络从入门到入门.md",
-    "Library/天池/天猫复购预测/reduceMemory操作.md",
-    "Library/算法导论/10.2 Linked lists.md",
-    "Library/每日一题/LCR 077. 排序链表.md",
-    "Library/每日一题/707 设计链表.md",
-    "Library/每日一题/链表.md",
-    "Library/go 语言/the way to go/7.2 切片.md",
-    "Library/go 语言/the way to go/6.9.md",
-    "Library/Git/2.3 查看提交历史.md",
-    "Library/Git/3 Git 分支.md",
-    "Library/Git/images/Pasted image 20250208154124.png",
-    "Library/Git/images/Pasted image 20250208154023.png",
-    "Library/Git/images/Pasted image 20250208153956.png",
-    "Library/Git/images/Pasted image 20250208153929.png",
-    "Library/Git/images/Pasted image 20250208153756.png",
-    "Library/Git/images/Pasted image 20250208153658.png",
-    "Library/Git/images/Pasted image 20250208153601.png",
-    "Library/Git/images/Pasted image 20250208153501.png",
-    "Library/Git/2.1 Git 基础 - 获取 Git 仓库.md",
-    "Library/Linux 高性能服务器编程/5 Linux 网络编程基础 API.md",
-    "Library/OS/man文档/fcntl 2.md",
-    "Library/OS/man文档/netstat 8.md",
-    "Library/Linux 高性能服务器编程/1 TCP 、IP协议族.md",
-    "Library/go 语言/Go 快速入门.md",
-    "Library/Docker/runc.md",
-    "Library/Docker/runc 示例.md",
-    "Library/OS/man文档/mount 8.md",
-    "Library/OS/操作系统：设计与实现/18 Linux OS.md",
-    "Library/OS/命令行的艺术.md",
-    "Library/Docker/OCI Runtime Spec.md",
-    "Library/go 语言/the way to go",
-    "Library/go 语言/images",
-    "Library/go 语言",
-    "Library/物联网平台/images",
-    "Library/物联网平台",
-    "Library/ThingsBoard/images",
-    "Library/ThingsBoard",
-    "Library/Kubernetes",
-    "Library/Linux 高性能服务器编程/images",
-    "Library/Linux 高性能服务器编程",
+    "Library/Golang/go 并发编程实战/6 网络爬虫框架.md",
+    "Library/Cuda guide/4 Hardware Implementation.md",
+    "Library/Cuda guide/Intro.md",
+    "Library/Cuda guide/images/Pasted image 20250320140747.png",
+    "Library/Cuda guide/images/Pasted image 20250320140730.png",
+    "Library/Cuda guide/images/Pasted image 20250320134954.png",
+    "组会/汇报 3-16.md",
+    "组会/汇报 3-19.md",
+    "Darwin OS docker 异同.md",
+    "Library/Cuda guide/images/Pasted image 20250319163314.png",
+    "Library/Cuda guide/images/Pasted image 20250319162137.png",
+    "Library/Cuda guide/images",
+    "Library/Cuda guide",
+    "Library/GPU/未命名.md",
+    "Library/GPU",
+    "Articles/Hardware-Assisted Virtualization of Neural Processing Units for Cloud Platforms.md",
+    "Library/Golang/go 并发编程实战/images/Pasted image 20250319142617.png",
+    "Library/Golang/go 并发编程实战/images/Pasted image 20250319141508.png",
+    "Library/Golang/go 并发编程实战/images/Pasted image 20250319132954.png",
+    "Library/Golang/go 并发编程实战/images/Pasted image 20250319123438.png",
+    "Library/Golang/go 并发编程实战/images/Pasted image 20250319113700.png",
+    "Library/Golang/go 并发编程实战/4 Go 的并发机制.md",
+    "Articles/Darwin3：a large-scale neuromorphic chip with a novel ISA and on-chip learning.md",
+    "Articles/Darwin-S：A Reference Software Architecture for Brain-Inspired Computers.md",
+    "Articles/BlackBox.md",
+    "Articles/MapReduce.md",
+    "Library/Golang/Go 高级编程/4 RPC 和 Protobuf.md",
+    "Library/分布式系统/什么是分布式系统.md",
+    "Library/分布式系统/images",
+    "Library/分布式系统",
+    "Library/Golang/go 并发编程实战/3 并发编程综述.md",
+    "Library/Golang/go 并发编程实战/1 语法.md",
+    "Library/Golang/goroot 和 gopath.md",
+    "Library/Golang/sort.Slice.md",
+    "Library/Golang/go 学习路线.md",
+    "Library/Golang/go 面经.md",
+    "Library/Golang/context.md",
+    "Library/Golang/如何使用go module导入本地包.md",
+    "Library/Golang/包共享.md",
+    "Library/Golang/包.md",
+    "Library/Golang/the way to go/6.9.md",
+    "Library/Golang/Go 高级编程/images",
+    "Library/Golang/Go 高级编程",
+    "Library/matrixcalc.pdf",
+    "Library/GDB/gdb-cheat-sheet.pdf",
+    "Library/Golang/go 并发编程实战/images",
     "未命名.canvas"
   ]
 }

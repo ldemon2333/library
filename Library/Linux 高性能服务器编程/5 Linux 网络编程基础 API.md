@@ -189,3 +189,110 @@ fd 参数是待关闭的 socket。不过，close 系统调用并非总是立即�
 ![[Pasted image 20250208143312.png]]
 
 # 5.8 数据读写
+## 5.8.1 TCP 数据读写
+socket 编程接口提供了几个专门用于 socket 数据读写的系统调用，它们增加了对数据读写的控制。其中用于 TCP 流数据读写的系统调用是：
+![[Pasted image 20250209143418.png]]
+
+recv 读取 sockfd 上的数据，buf 和 len 参数分别指定读缓冲区的位置和大小。recv 成功时返回实际读取到的数据的长度，可能小于期望的长度 len。因此要多次调用 recv，才能读取到完整的数据。recv 可能返回 0，这意味着通信对方已经关闭连接了。recv 出错时返回 -1 并设置 errno。
+
+send 往 sockfd 上写入数据，buf 和 len 参数分别指定写缓冲区的位置和大小。send 成功时返回实际写入的数据的长度，失败则返回 -1 并设置 errno。
+
+flags 参数提供额外的控制
+![[Pasted image 20250209143746.png]]
+
+服务器程序的输出如下：
+![[Pasted image 20250209144206.png]]
+由此可见，客户端发送给服务器的 3 字节的带外数据“abc”中，仅有最后一个字符“c“ 被服务器当成真正的带外数据接收。
+![[Pasted image 20250209144317.png]]
+
+## 5.8.2 UDP 数据读写
+socket 编程接口中用于 UDP 数据报读写的系统调用是：
+![[Pasted image 20250209144415.png]]
+因为 UDP 通信没有连接的概念，所有每次读取数据都需要获取发送端的 socket 地址，即参数 src_addr 所指的内容，addrlen 参数则指定该地址的长度。
+
+sendto 中 dest_addr 参数指定接收端的 socket 地址。
+
+recvfrom/sendto 系统调用也可以用于面向连接 （STREAM）的socket 的数据读写，只需要把最后两个参数都设置为 NULL 以忽略发送端/接收端的 socket 地址。
+
+## 5.8.3 通用数据读写函数
+socket 编程接口还提供了一对通用的数据读写系统调用。不仅能用于 TCP 流数据，也能用于 UDP 数据报：
+![[Pasted image 20250209144745.png]]
+msg 参数是 msghdr 结构体类型的指针。
+![[Pasted image 20250209144812.png]]
+msg_name 成员指向一个 socket 地址结构变量。它指定通信对方的 socket 地址。对于面向连接的 TCP 协议，无意义，必须被设置为 NULL。
+
+msg_iov 成员是 iovec 结构体类型的指针，iovec 结构体的定义如下：
+![[Pasted image 20250209160303.png]]
+iovec 结构体封装了一块内存的起始位置和长度。对于 recvmsg 而言，数据将被读取并存放在 msg_iovlen 块分散的内存中，这些内存的位置和长度则由 msg_iov 指向的数组指定，这称为分散读（scatter read）；对于sendmsg 而言，msg_iovlen 块分散内存中的数据将被一并发送，这称为集中写（gather write）。
+
+msg_flags 成员无须设定，它会复制 recvmsg/sendmsg 的 flags 参数的内容以影响数据读写过程。recvmsg 还会在调用结束前，将某些更新后的标志设置到 msg_flags 中。
+
+# 5.9 带外标记
+在实际应用中，通常无法预期带外数据何时到来。Linux 内核检测到 TCP 紧急标志时，将通知应用程序有带外数据需要接收。内核通知应用程序带外数据到达的两种常见方式是：I/O 复用产生的异常事件和 SIGURG 信号。但是，即使应用程序得到了有带外数据需要接收的通知，还需要知道带外数据在数据流中的具体位置，才能准确接收带外数据。这一点可通过如下系统调用实现：
+![[Pasted image 20250210095136.png]]
+sockatmark 判断 sockfd 是否处于带外标记，即下一个被读取到的数据是否是带外数据。如果是，sockatmark 返回 1，此时就可以利用带 MSG_OOB 标志的 recv 调用来接收带外数据。如果不是，返回 0。
+
+# 5.10 地址信息函数
+知道连接 socket 的本端 socket 地址，以及远端的 socket 地址。下面这两个函数正式用于解决这个问题：
+![[Pasted image 20250210095400.png]]
+getsockname 获取 sockfd 对应的本端 socket 地址，并将其存储于 address 参数指定的内存中，该 socket 地址的长度则存储于 address_len 参数指向的变量中。如果实际 socket 地址的长度大于 address 所指内存区的大小，那么该 socket 地址将被截断。成功返回 0，失败返回 -1 并设置 errno。
+
+getpeername 获取 sockfd 对应的远端socket 地址。
+
+# 5.11 socket 选项
+fcntl 系统调用是控制文件描述符属性的通用 POSIX 方法，专门用来读取和设置 socket 文件描述符属性的方法：
+![[Pasted image 20250210095744.png]]
+level 参数指定要操作哪个协议的选项（即属性），比如 IPv4、IPv6、TCP 等。成功返回 0，失败返回 -1 并设置 errno。
+![[Pasted image 20250210100951.png]]
+
+对服务器而言，有部分 socket 选项只能在调用 listen 系统调用前针对监听 socket 设置才有效。这是因为连接 socket 只能由 accept 调用返回，而 accept 从 listen 监听队列中接收的连接至少已经完成了 TCP 三次握手的前两个步骤（因为 listen 监听队列中的连接至少已进入了 SYN_RCVD 状态），这说明服务器已经往被接收连接上发送出了 TCP 同步报文段。对监听 socket 设置这些 socket 选项，那么 accept 返回的连接 socket 将自动继承这些选项。对客户端而言，这些 socket 选项则应该在调用 connect 函数之前设置，因为 connect 调用成功返回之后，TCP 三次握手已完成。
+
+## 5.11.1 SO_REUSEADDR 选项
+TCP 连接的 TIME_WAIT 状态，并提到服务器程序可以通过设置 socket 选项 SO_REUSEADDR 来强制使用被处于 TIME_WAIT 状态的连接占用的 socket 地址
+![[Pasted image 20250210101203.png]]
+经过 setsockopt 的设置之后，即使 sock 处于 TIME_WAIT 状态，与之绑定的 socket 地址也可以立即被重用。此外，可以修改内核参数 /proc/sys/net/ipv4/tcp_tw_recycle 来快速回收被关闭的 socket，从而使得 TCP 连接根本就不进入 TIME_WAIT 状态，进而允许应用程序立即重用本地的 socket 地址。
+
+## 5.11.2 SO_RCVBUF 和 SO_SNDBUF 选项
+SO_RCVBUF 和 SO_SNDBUF 选项分别表示 TCP 接收缓冲区和发送缓冲区的大小。用 setsockopt 来设置 TCP 的接收缓冲区和发生缓冲区的大小时，系统都会将其值加倍，并且不得小于某个最小值。这样做的目的是：确保一个 TCP 连接拥有足够的空闲缓冲区来处理拥塞。此外，可以直接修改内核参数 /proc/sys/net/ipv4/tcp_rmem 和 /proc/sys/net/ipv4/tcp_wmem 来强制 TCP 接收缓冲区和发送缓冲区的大小没有最小值限制。
+
+## 5.11.3 SO_RCVLOWAT 和 SO_SNDLOWAT 选项
+分别表示 TCP 接收缓冲区和发送缓冲区的低水位标志。它们一般被 I/O 复用系统调用用来判断 socket 是否可读或可写。当 TCP 接收缓冲区中可读数据的总数大于其低水位标记时，I/O 复用系统调用将通知应用程序可以从对应的 socket 上读取数据；默认情况下，TCP 接收/发送缓冲区的低水位标记均为 1 字节。
+
+## 5.11.4 SO_LINGER 选项
+用于控制 close 系统调用在关闭 TCP 连接时的行为。默认情况下，当我们使用 close 系统调用来关闭一个 socket 时，close 将立即返回，TCP 模块负责把该 socket 对应的 TCP 发送缓冲区中残留的数据发送给对方。
+
+设置 SO_LINGER 选项的值时，需要给 setsockopt 传递一个 linger 类型的结构体。
+![[Pasted image 20250210102835.png]]
+
+# 5.12 网络信息 API
+用服务名称来代替端口号。
+![[Pasted image 20250210103016.png]]
+
+## 5.12.1 gethostbyname 和 gethostbyaddr
+gethostbyname 函数根据主机名称获取主机的完整信息，gethostbyaddr 函数根据 IP 地址获取主机的完整信息。gethostbyname 函数通常先在本地的 /etc/hosts 配置文件中查找主机，如果没有找到，再去访问 DNS 服务器。
+![[Pasted image 20250210103329.png]]
+
+![[Pasted image 20250210103358.png]]
+## 5.12.2 getservbyname 和 getservbyport
+![[Pasted image 20250210103620.png]]
+上面 4 个函数都是不可重入的，即非线程安全的。netdb.h 头文件给出了它们的可重入版本。在原函数名尾部加上 \_r (re-entrant)。
+
+## 5.12.3 getaddrinfo
+```
+#include <netdb.h>
+int getaddrinfo(const char* hostname, const char *service, const struct addrinfo* hints, struct addrinfo** result);
+```
+![[Pasted image 20250210104731.png]]
+![[Pasted image 20250210104802.png]]
+当使用 hints 参数的时候，可以设置其 ai_flags, ai_family, ai_socktype 和 ai_protocol 四个字段，其他字段则必须被设置为 NULL。
+![[Pasted image 20250210105003.png]]
+获取主机 ernest-laptop 上的“daytime”流服务信息。
+
+getaddrinfo 将隐式地分配堆内存，因为 res 指针原本是没有指向一块合法内存的，所以，getaddrinfo 调用结束后，必须使用如下配对函数来释放这块内存：
+![[Pasted image 20250210105148.png]]
+
+## 5.12.4 getnameinfo
+通过 socket 地址同时获得以字符串表示的主机名和服务名。
+![[Pasted image 20250210105421.png]]
+![[Pasted image 20250210105443.png]]
+![[Pasted image 20250210105540.png]]

@@ -102,4 +102,37 @@ tar -xf archive.tar -C /path/to/destination
 tar -cf - large_dir | pv | tar -xf -
 ```
 
-你需要哪种特定用法？
+### Linux 打包文件夹的常用方法及示例
+
+---
+
+#### 一、**使用 `tar` 命令（推荐）**
+
+`tar` 是 Linux 最常用的归档工具，支持打包和压缩，功能强大且灵活。
+
+1. **基本打包（不压缩）**
+```
+tar -cvf 包名.tar 文件夹路径/
+```
+- **参数说明**：
+    - `-c`：创建新归档文件；
+    - `-v`：显示详细过程；
+    - `-f`：指定输出文件名（必须放在最后）。
+
+
+**打包并压缩**
+
+- **gzip 压缩（生成 .tar.gz ）**：
+```
+tar -czvf backup.tar.gz 文件夹路径/
+```
+- `-z`：使用 gzip 压缩。
+- `-j`：使用 bzip2 压缩。
+
+```
+scp [参数] 用户名@服务器IP:服务器文件路径 本地保存路径
+```
+
+```
+scp root@192.168.1.100:/data/test.txt /home/user/Downloads/
+```
