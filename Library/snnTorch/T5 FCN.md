@@ -131,6 +131,8 @@ $$\frac{\partial \mathcal{L}[t]}{\partial W[t-1]} =
 \underbrace{\frac{\partial I[t-1]}{\partial W[t-1]}}_{X[t-1]} \tag{7}$$
 我们已经处理了（4）的所有项，除了$\partial U[t]/\partial U[t-1]$。从（1）开始，时间导数项的$\beta$。如果我们真的想这样做，我们现在已经知道了足够多的知识，可以辛苦地手动计算每个时间步的每个权重的导数，对于单个神经元来说，它看起来像这样:
 ![[Pasted image 20241011210501.png]]
+The reset mechanism has been omitted from the above figure. In snnTorch, reset is included in the forward-pass, but detached from the backward pass.
+
 
 # 4.设置Loss/输出解码
 在传统的非脉冲神经网络中，有监督的多类分类问题将具有最高激活值的神经元视为预测类别。

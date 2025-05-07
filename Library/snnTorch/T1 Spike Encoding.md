@@ -118,6 +118,8 @@ spike_data = spikegen.latency(data_it, num_steps=100, tau=5, threshold=0.01)
 
 - tau：电路的RC时间常数。默认情况下，输入特性被视为注入RC电路的恒定电流。更高的tau将导致更慢的发射。
 - threshold：膜电位触发阈值。低于此阈值的输入值没有闭合形式的解，因为输入电流不足以驱动膜达到阈值。所有低于阈值的值都被裁剪并分配给最后的时间步长。
+
+One major advantages of latency coding over rate coding is sparsity. If neurons are constrained to firing a maximum of once over the time course of interest, then this promotes low-power operation.
 ## 2.3 增量调制编码
 有理论认为，视网膜是适应性的: 它只会处理信息时，有新的东西处理。如果你的视野没有变化，那么你的感光细胞就不太容易被激活。
 
