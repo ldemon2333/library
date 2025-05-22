@@ -42,3 +42,6 @@ $ kubectl attach -it nginx -c shell
 
 这样，我们就可以在shell容器里执行ps指令，查看所有正在运行的进程：
 ![[Pasted image 20250507105024.png]]
+可以看到，在这个容器里，我们不仅可以看到它本身的ps ax指令，还可以看到nginx容器的进程，以及Infra容器的/pause进程。这就意味着，整个Pod里的每个容器的进程，对于所有容器来说都是可见的：它们共享了同一个PID Namespace。
+
+类似地，**凡是Pod中的容器要共享宿主机的Namespace，也一定是Pod级别的定义**，比如：

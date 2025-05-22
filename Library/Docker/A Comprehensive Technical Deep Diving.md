@@ -150,7 +150,7 @@ Namespaces allow containers to have isolation on 6 _+ 1_ levels. The purpose o
 
 **IPC:** (Inter-process Communication): [CLONE_NEWIPC]: isolates [System V IPC](http://www.kernel.org/doc/man-pages/online/pages/man7/svipc.7.html) objects, [POSIX message queues](http://www.kernel.org/doc/man-pages/online/pages/man7/mq_overview.7.html)
 
-[Namespace](https://man7.org/linux/man-pages/man7/namespaces.7.html) isolation means that groups of processes are separated such that they cannot “see” resources in other groups: [[11]](https://blog.ramlot.eu/containers/)
+[Namespace](https://man7.org/linux/man-pages/man7/namespaces.7.html) isolation means that groups of processes are separated such that they cannot “see” resources in other groups: [[11 Deploying a Stand-Alone Application]](https://blog.ramlot.eu/containers/)
 - Processes in different UTS namespaces see their dedicated hostname and can edit their hostname independently.
 - Processes in different User namespaces see a their dedicates list of users and can add or remove users without affecting other processes.
 - Processes get a different PID for each PID namespaces they are part of, each PID namespace has its own PID tree.
@@ -171,6 +171,6 @@ Cgroup is not only for imposing limitation on CPU and memory usage; it also limi
 
 To limit total number of processes allowed within a control group, there is a control group called _pid,_ which can be prevent the effectiveness of a [fork bomb](https://en.wikipedia.org/wiki/Fork_bomb).
 
-The Linux Kernel communicates information about cgroups through a set of pseudo-filesystems that typically reside at `/sys/fs/cgroup`. From inside the container, the list of its own cgroups is available from the `[/proc](https://man7.org/linux/man-pages/man5/proc.5.html)`. Each cgroup has an interface file called `cgroup.procs` that lists the PIDs of all processes belonging to the cgroup, one per line. [[12]](https://facebookmicrosites.github.io/cgroup2/docs/create-cgroups.html)
+The Linux Kernel communicates information about cgroups through a set of pseudo-filesystems that typically reside at `/sys/fs/cgroup`. From inside the container, the list of its own cgroups is available from the `[/proc](https://man7.org/linux/man-pages/man5/proc.5.html)`. Each cgroup has an interface file called `cgroup.procs` that lists the PIDs of all processes belonging to the cgroup, one per line. [[12 Kubernetes Volume Management]](https://facebookmicrosites.github.io/cgroup2/docs/create-cgroups.html)
 
 

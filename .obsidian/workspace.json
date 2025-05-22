@@ -4,103 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "4ba83f017699f0e1",
+        "id": "0c50c90284731cdc",
         "type": "tabs",
         "children": [
           {
-            "id": "f71c6236d7dd10d7",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "计算图切分.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "计算图切分"
-            }
-          },
-          {
-            "id": "10c617af592083b2",
+            "id": "93d5911a6cfb11ff",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Darwin OS docker 异同.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Darwin OS docker 异同"
-            }
-          },
-          {
-            "id": "ab0c93caea0cfa80",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Library/K8s/张磊/14 深入解析Pod对象（一）：基本概念.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "14 深入解析Pod对象（一）：基本概念"
-            }
-          },
-          {
-            "id": "df0d6cc686140ae1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Library/Golang/面经/map 底层实现原理.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "map 底层实现原理"
-            }
-          },
-          {
-            "id": "ed09abc565ed7d5a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Library/K8s/面经.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "面经"
-            }
-          },
-          {
-            "id": "1c99a3bd434c480e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Library/K8s/入门知识.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "入门知识"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -132,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#：protect",
+                "query": "targetPort",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -157,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 406.5110321044922
   },
   "right": {
     "id": "1aaefe1a03615f71",
@@ -174,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Library/Golang/面经/map 底层实现原理.md",
+                "file": "Articles/大纲.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "map 底层实现原理 的反向链接列表"
+              "title": "大纲 的反向链接列表"
             }
           },
           {
@@ -222,13 +138,23 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Library/Golang/面经/map 底层实现原理.md",
+                "file": "Library/K8s/张磊/部署 mysql 分布式集群.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "map 底层实现原理 的大纲"
+              "title": "部署 mysql 分布式集群 的大纲"
+            }
+          },
+          {
+            "id": "aa7e76d192c006cb",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
             }
           }
         ],
@@ -236,7 +162,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -248,57 +174,59 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "workspaces:管理工作区布局": false,
-      "obsidian-file-cleaner:清理文件": false
+      "obsidian-file-cleaner:清理文件": false,
+      "copilot:Open Copilot Chat": false
     }
   },
-  "active": "df0d6cc686140ae1",
+  "active": "93d5911a6cfb11ff",
   "lastOpenFiles": [
-    "Library/K8s/张磊/14 深入解析Pod对象（一）：基本概念.md",
-    "Library/K8s/张磊/images/Pasted image 20250507105024.png",
-    "Library/K8s/张磊/images/Pasted image 20250507104934.png",
-    "Library/K8s/张磊/16 编排其实很简单：谈谈“控制器”模型.md",
-    "Library/K8s/张磊/17 经典PaaS的记忆：作业副本与水平扩展.md",
-    "Library/K8s/张磊/images/Pasted image 20250507104747.png",
-    "Library/K8s/张磊/images/Pasted image 20250507104618.png",
+    "Log/2025-05-22.md",
+    "Articles/Automating Neural Model Selection in Spiking Neural Networks Using AutoML Techniques.md",
+    "Library/K8s/edx 课程/13 ConfigMaps and Secrets.md",
+    "Library/K8s/edx 课程/12 Kubernetes Volume Management.md",
+    "TKDE期刊论文大纲：高能效脉冲神经网络赋能端侧多模态序列推荐.md",
+    "论文大纲.md",
+    "Articles/Cost-Effective On-Device Sequential Recommendation with Spiking Neural Networks.md",
+    "论文大纲：Cost-Effective On-Device Sequential Recommendation with Spiking Neural Networks.md",
+    "论文大纲：When Spiking Neuron Models Meet On-device Sequential Recommendation with Multi-modal Information.md",
+    "未命名.md",
+    "images/论文大纲：When Spiking Neuron Models Meet On-device Sequential Recommendation with Multi-modal Information.md",
     "Library/K8s/面经.md",
-    "Library/K8s/张磊/images/Pasted image 20250507104410.png",
-    "Library/K8s/张磊/images/Pasted image 20250507104243.png",
-    "Library/K8s/张磊/images/Pasted image 20250507104228.png",
-    "Library/K8s/张磊/images/Pasted image 20250507104204.png",
-    "Library/K8s/张磊/images/Pasted image 20250507104117.png",
-    "Library/K8s/入门知识.md",
-    "Library/K8s/张磊/images/Pasted image 20250507103817.png",
-    "Library/K8s/张磊/13 为什么我们需要Pod？.md",
-    "Library/K8s/张磊/张磊.md",
-    "Library/K8s/Using kubectl to Create a Deployment.md",
-    "Library/K8s/Adopting Sidecar Containers.md",
-    "Library/K8s/Concepts.md",
-    "Library/K8s/张磊/08 白话容器基础（四）：重新认识Docker容器.md",
-    "Library/K8s/张磊/10 Kubernetes一键部署利器：kubeadm.md",
-    "Library/K8s/张磊/09 从容器到容器云：谈谈Kubernetes的本质.md",
-    "Library/K8s/Deployments.md",
-    "Articles/Towards High-performance Spiking Transformers from ANN to SNN Conversion.md",
-    "Library/Docker/核心技术/namespace.md",
+    "Library/K8s/张磊/部署 mysql 分布式集群.md",
+    "Library/K8s/edx 课程/images/Pasted image 20250515154917.png",
+    "Library/K8s/edx 课程/images/Pasted image 20250515154836.png",
+    "Library/K8s/edx 课程/images/Pasted image 20250515154548.png",
+    "Library/K8s/edx 课程/11 Deploying a Stand-Alone Application.md",
+    "Library/K8s/edx 课程/images/Pasted image 20250515150822.png",
+    "Library/K8s/edx 课程/10 Services.md",
+    "Darwin OS docker 异同.md",
+    "组会/汇报 2025-5-14.md",
+    "组会/images/k8s+os+darwin.drawio (1).png",
+    "组会/images/k8s+os+darwin.drawio.png",
+    "ANN 2 SNN 流程.md",
+    "计算图切分.md",
+    "组会/images/计算图切分.drawio.png",
+    "Spike-Based Synaptic Plasticity in Silicon.md",
+    "Library/Golang/面经/map 底层实现原理.md",
+    "Library/K8s/edx 课程/images/Pasted image 20250513203313.png",
+    "Library/K8s/edx 课程/images/Pasted image 20250513202849.png",
+    "Library/K8s/edx 课程/images/Pasted image 20250513201934.png",
+    "Library/OS/Linux TTY&PTS 概述.md",
+    "Library/OS/printf是怎么输出到控制台.md",
+    "Library/Golang/the way to go/1.2 语言的主要特性与发展的环境和影响因素.md",
+    "Library/Golang/go 并发编程实战/3 并发编程综述.md",
+    "Library/Golang/go web 编程/3.3 Go 如何使得 Web 工作.md",
+    "未命名.canvas",
+    "Library/计网面经/images",
+    "Library/计网面经",
+    "Library/K8s/edx 课程/images",
+    "Library/K8s/edx 课程",
     "Library/K8s/张磊/images",
     "Library/K8s/张磊",
-    "Library/Docker/核心技术/runc code.md",
-    "Library/Docker/核心技术/runc.md",
-    "Library/Docker/runc.md",
-    "Library/Docker/runc 与 容器运行时.md",
-    "Library/Docker/核心技术/cgroup v2.md",
-    "Library/K8s/Pods.md",
-    "Library/Redis/教程.md",
-    "Library/Redis/面经.md",
-    "Library/Redis/基本概念.md",
     "Library/Redis/images",
     "Library/Redis",
     "Library/SpikeJelly/images",
     "Library/SpikeJelly",
-    "Library/Golang/web 框架开发",
-    "Library/Golang/面经/images",
-    "images",
-    "Library/MySql/images",
-    "Library/OS/XV6/未命名.canvas",
-    "未命名.canvas"
+    "Library/OS/XV6/未命名.canvas"
   ]
 }
