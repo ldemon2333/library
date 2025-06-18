@@ -1,8 +1,8 @@
 {
   "cssTheme": "Blue Topaz",
   "theme": "moonstone",
-  "accentColor": "#cd822d",
-  "baseFontSize": 14,
+  "accentColor": "#a22dcd",
+  "baseFontSize": 19,
   "baseFontSizeAction": true,
   "textFontFamily": "Inter"
 }
