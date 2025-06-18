@@ -4,20 +4,43 @@
     "type": "split",
     "children": [
       {
-        "id": "0c50c90284731cdc",
+        "id": "e90749391d502bea",
         "type": "tabs",
         "children": [
           {
-            "id": "93d5911a6cfb11ff",
+            "id": "32d9bd9bf4ef0b05",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "组会/2025-6-18.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "2025-6-18"
+            }
+          },
+          {
+            "id": "2b57bafe3a781959",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Library/K8s/Admission Control in Kubernetes.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Admission Control in Kubernetes"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "targetPort",
+                "query": "sed",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +97,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 406.5110321044922
+    "width": 406.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "1aaefe1a03615f71",
@@ -138,13 +162,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Library/K8s/张磊/部署 mysql 分布式集群.md",
+                "file": "Library/K8s/Ingress.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "部署 mysql 分布式集群 的大纲"
+              "title": "Ingress 的大纲"
             }
           },
           {
@@ -162,7 +186,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 395.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -178,55 +202,55 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "93d5911a6cfb11ff",
+  "active": "2b57bafe3a781959",
   "lastOpenFiles": [
-    "Log/2025-05-22.md",
-    "Articles/Automating Neural Model Selection in Spiking Neural Networks Using AutoML Techniques.md",
-    "Library/K8s/edx 课程/13 ConfigMaps and Secrets.md",
-    "Library/K8s/edx 课程/12 Kubernetes Volume Management.md",
-    "TKDE期刊论文大纲：高能效脉冲神经网络赋能端侧多模态序列推荐.md",
-    "论文大纲.md",
-    "Articles/Cost-Effective On-Device Sequential Recommendation with Spiking Neural Networks.md",
-    "论文大纲：Cost-Effective On-Device Sequential Recommendation with Spiking Neural Networks.md",
-    "论文大纲：When Spiking Neuron Models Meet On-device Sequential Recommendation with Multi-modal Information.md",
-    "未命名.md",
-    "images/论文大纲：When Spiking Neuron Models Meet On-device Sequential Recommendation with Multi-modal Information.md",
-    "Library/K8s/面经.md",
-    "Library/K8s/张磊/部署 mysql 分布式集群.md",
-    "Library/K8s/edx 课程/images/Pasted image 20250515154917.png",
-    "Library/K8s/edx 课程/images/Pasted image 20250515154836.png",
-    "Library/K8s/edx 课程/images/Pasted image 20250515154548.png",
-    "Library/K8s/edx 课程/11 Deploying a Stand-Alone Application.md",
-    "Library/K8s/edx 课程/images/Pasted image 20250515150822.png",
-    "Library/K8s/edx 课程/10 Services.md",
+    "Library/K8s/Dynamic Admission Control.md",
+    "Library/K8s/Admission Control in Kubernetes.md",
+    "Library/K8s/自定义 CRD 编写.md",
+    "组会/2025-6-18.md",
     "Darwin OS docker 异同.md",
-    "组会/汇报 2025-5-14.md",
-    "组会/images/k8s+os+darwin.drawio (1).png",
-    "组会/images/k8s+os+darwin.drawio.png",
     "ANN 2 SNN 流程.md",
+    "论文大纲：When Spiking Neuron Models Meet On-device Sequential Recommendation with Multi-modal Information.md",
+    "论文大纲：Cost-Effective On-Device Sequential Recommendation with Spiking Neural Networks.md",
     "计算图切分.md",
-    "组会/images/计算图切分.drawio.png",
+    "NVIDIA NIM 优化AI推理微服务.md",
     "Spike-Based Synaptic Plasticity in Silicon.md",
-    "Library/Golang/面经/map 底层实现原理.md",
-    "Library/K8s/edx 课程/images/Pasted image 20250513203313.png",
-    "Library/K8s/edx 课程/images/Pasted image 20250513202849.png",
-    "Library/K8s/edx 课程/images/Pasted image 20250513201934.png",
-    "Library/OS/Linux TTY&PTS 概述.md",
-    "Library/OS/printf是怎么输出到控制台.md",
-    "Library/Golang/the way to go/1.2 语言的主要特性与发展的环境和影响因素.md",
-    "Library/Golang/go 并发编程实战/3 并发编程综述.md",
-    "Library/Golang/go web 编程/3.3 Go 如何使得 Web 工作.md",
-    "未命名.canvas",
+    "TKDE期刊论文大纲：高能效脉冲神经网络赋能端侧多模态序列推荐.md",
+    "组会/2025-6-11.md",
+    "组会/调研汇报.md",
+    "组会/汇报 6-4.md",
+    "汇报.md",
+    "类脑实践报告.md",
+    "images/Pasted image 20250617110532.png",
+    "images/Pasted image 20250617110525.png",
+    "images/Pasted image 20250617110430.png",
+    "images/Pasted image 20250617110324.png",
+    "images/Pasted image 20250617110320.png",
+    "images/Pasted image 20250617110027.png",
+    "images/Pasted image 20250617110013.png",
+    "Library/NVIDIA NIM/NVIDIA NIM Offers Optimized Inference Microservices for Deploying AI Models at Scale.md",
+    "Library/NVIDIA NIM",
+    "Library/K8s/Ingress.md",
+    "Library/K8s/Kubeconfig File Explained (Examples, Usage and Configuration).md",
+    "Library/K8s/RoadMap.md",
+    "Library/K8s/images/Pasted image 20250616124608.png",
+    "Library/K8s/Understanding Kubernetes Architecture.md",
+    "Library/K8s/images/Pasted image 20250615231832.png",
+    "Library/K8s/images/Pasted image 20250615230835.png",
+    "Library/K8s/架构.md",
+    "Library/K8s/hard-way/5 Generating Kubernetes Configuration Files for Authentication.md",
+    "Library/K8s/hard-way/4 Provisioning a CA and Generating TLS Certificates.md",
+    "Library/K8s/hard-way/2 学习笔记.md",
+    "Library/K8s/hard-way/images",
+    "Library/K8s/hard-way/未命名",
+    "Library/K8s/hard-way",
+    "Library/GRPC/images",
+    "Library/GRPC",
+    "Library/Golang/面经/华为面试.canvas",
+    "Library/Introduction to Cloud Infrastructure Technologies/images",
+    "Library/Introduction to Cloud Infrastructure Technologies",
     "Library/计网面经/images",
     "Library/计网面经",
-    "Library/K8s/edx 课程/images",
-    "Library/K8s/edx 课程",
-    "Library/K8s/张磊/images",
-    "Library/K8s/张磊",
-    "Library/Redis/images",
-    "Library/Redis",
-    "Library/SpikeJelly/images",
-    "Library/SpikeJelly",
     "Library/OS/XV6/未命名.canvas"
   ]
 }
