@@ -4,17 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "51e4616a4a3a688a",
+        "id": "51ac67cad2cd311c",
         "type": "tabs",
         "children": [
           {
-            "id": "d7f483adc4a9daf7",
+            "id": "17e2a7fb614b3e50",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Library/K8s/Dynamic Admission Control.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Dynamic Admission Control"
             }
           }
         ]
@@ -139,13 +144,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Library/K8s/Ingress.md",
+                "file": "Library/K8s/Dynamic Admission Control.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Ingress 的大纲"
+              "title": "Dynamic Admission Control 的大纲"
             }
           },
           {
@@ -179,11 +184,12 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "d7f483adc4a9daf7",
+  "active": "17e2a7fb614b3e50",
   "lastOpenFiles": [
-    "组会/2025-6-18.md",
     "Library/K8s/Admission Control in Kubernetes.md",
     "Library/K8s/Dynamic Admission Control.md",
+    "Library/K8s/Adopting Sidecar Containers.md",
+    "组会/2025-6-18.md",
     "Library/K8s/自定义 CRD 编写.md",
     "Darwin OS docker 异同.md",
     "ANN 2 SNN 流程.md",
@@ -217,7 +223,6 @@
     "Library/K8s/架构.md",
     "Library/K8s/hard-way/5 Generating Kubernetes Configuration Files for Authentication.md",
     "Library/K8s/hard-way/4 Provisioning a CA and Generating TLS Certificates.md",
-    "Library/K8s/hard-way/2 学习笔记.md",
     "Library/K8s/hard-way/images",
     "Library/K8s/hard-way/未命名",
     "Library/K8s/hard-way",
