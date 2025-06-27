@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "51ac67cad2cd311c",
+        "id": "56afe2486da19533",
         "type": "tabs",
         "children": [
           {
-            "id": "17e2a7fb614b3e50",
+            "id": "6a2bbcadc456b561",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Library/K8s/Dynamic Admission Control.md",
+                "file": "Library/ThingsBoard/ThingsBoard architecture.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Dynamic Admission Control"
+              "title": "ThingsBoard architecture"
             }
           }
         ]
@@ -144,13 +144,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Library/K8s/Dynamic Admission Control.md",
+                "file": "Library/ThingsBoard/ThingsBoard architecture.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Dynamic Admission Control 的大纲"
+              "title": "ThingsBoard architecture 的大纲"
             }
           },
           {
@@ -184,55 +184,55 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "17e2a7fb614b3e50",
+  "active": "6a2bbcadc456b561",
   "lastOpenFiles": [
-    "Library/K8s/Admission Control in Kubernetes.md",
-    "Library/K8s/Dynamic Admission Control.md",
-    "Library/K8s/Adopting Sidecar Containers.md",
-    "组会/2025-6-18.md",
-    "Library/K8s/自定义 CRD 编写.md",
-    "Darwin OS docker 异同.md",
-    "ANN 2 SNN 流程.md",
-    "论文大纲：When Spiking Neuron Models Meet On-device Sequential Recommendation with Multi-modal Information.md",
-    "论文大纲：Cost-Effective On-Device Sequential Recommendation with Spiking Neural Networks.md",
-    "计算图切分.md",
-    "NVIDIA NIM 优化AI推理微服务.md",
-    "Spike-Based Synaptic Plasticity in Silicon.md",
-    "TKDE期刊论文大纲：高能效脉冲神经网络赋能端侧多模态序列推荐.md",
-    "组会/2025-6-11.md",
-    "组会/调研汇报.md",
-    "组会/汇报 6-4.md",
-    "汇报.md",
-    "类脑实践报告.md",
-    "images/Pasted image 20250617110532.png",
-    "images/Pasted image 20250617110525.png",
-    "images/Pasted image 20250617110430.png",
-    "images/Pasted image 20250617110324.png",
-    "images/Pasted image 20250617110320.png",
-    "images/Pasted image 20250617110027.png",
-    "images/Pasted image 20250617110013.png",
-    "Library/NVIDIA NIM/NVIDIA NIM Offers Optimized Inference Microservices for Deploying AI Models at Scale.md",
-    "Library/NVIDIA NIM",
-    "Library/K8s/Ingress.md",
-    "Library/K8s/Kubeconfig File Explained (Examples, Usage and Configuration).md",
-    "Library/K8s/RoadMap.md",
-    "Library/K8s/images/Pasted image 20250616124608.png",
+    "Library/GDB/gdb-cheat-sheet.pdf",
+    "Library/ThingsBoard/Getting Started with ThingsBoard.md",
+    "Library/ThingsBoard/ThingsBoard architecture.md",
+    "Library/Introduction to Cloud Infrastructure Technologies/1 Introduction to Cloud Computing and Technologies.md",
+    "Library/K8s/edx 课程/13 ConfigMaps and Secrets.md",
+    "Library/K8s/edx 课程/12 Kubernetes Volume Management.md",
+    "Library/K8s/edx 课程/11 Deploying a Stand-Alone Application.md",
+    "Library/K8s/edx 课程/10 Services.md",
+    "Library/K8s/edx 课程/9 Authentication.md",
+    "Library/K8s/edx 课程/7 Accessing Minikube.md",
+    "Library/K8s/edx 课程/4 k8s Architecture.md",
+    "Library/K8s/edx 课程/2 Container Orchestration.md",
+    "Library/K8s/edx 课程/1 From Monolith to Microservices.md",
+    "Library/K8s/hard-way/2 学习笔记.md",
+    "Library/K8s/hard-way/0 机器配置同一个网络.md",
+    "Library/K8s/What happens when ... Kubernetes edition!.md",
     "Library/K8s/Understanding Kubernetes Architecture.md",
-    "Library/K8s/images/Pasted image 20250615231832.png",
-    "Library/K8s/images/Pasted image 20250615230835.png",
-    "Library/K8s/架构.md",
-    "Library/K8s/hard-way/5 Generating Kubernetes Configuration Files for Authentication.md",
-    "Library/K8s/hard-way/4 Provisioning a CA and Generating TLS Certificates.md",
+    "Library/K8s/Using kubectl to Create a Deployment.md",
+    "Library/K8s/Updating Configuration via a ConfigMap.md",
+    "Library/K8s/Service Discovery.md",
+    "Library/K8s/Services, Load Balancing, and Networking.md",
+    "Library/K8s/RoadMap.md",
+    "Library/K8s/OpenStack网络实现.md",
+    "Library/K8s/Pods.md",
+    "Library/K8s/leader-election.md",
+    "Library/K8s/Kubeconfig File Explained (Examples, Usage and Configuration).md",
+    "Library/K8s/client-go 源码分析/images/Pasted image 20250627094636.png",
+    "Library/K8s/client-go 源码分析/images/Pasted image 20250626222005.png",
+    "Library/K8s/client-go 源码分析/images",
+    "Library/K8s/client-go 源码分析",
+    "Library/Docker/images/Pasted image 20250219164118.png",
+    "Library/Docker/images/Pasted image 20250106182630.png",
+    "Articles/images/Pasted image 20250625203630.png",
+    "Articles/images/Pasted image 20250625200510.png",
+    "Articles/images/Pasted image 20250625194746.png",
+    "组会/images/Pasted image 20250625090847.png",
+    "组会/images/Pasted image 20250625090846.png",
+    "Library/K8s/images/Pasted image 20250624152409.png",
+    "Library/beego/images",
+    "Library/beego",
+    "Library/NVIDIA NIM",
     "Library/K8s/hard-way/images",
     "Library/K8s/hard-way/未命名",
     "Library/K8s/hard-way",
     "Library/GRPC/images",
     "Library/GRPC",
     "Library/Golang/面经/华为面试.canvas",
-    "Library/Introduction to Cloud Infrastructure Technologies/images",
-    "Library/Introduction to Cloud Infrastructure Technologies",
-    "Library/计网面经/images",
-    "Library/计网面经",
     "Library/OS/XV6/未命名.canvas"
   ]
 }
