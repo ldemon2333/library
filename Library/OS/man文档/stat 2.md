@@ -128,3 +128,133 @@ stat, fstat, lstat, fstatat - get file status
 
 # 介绍
 These functions return information about a file, in the buffer pointed to by _statbuf_. 
+
+`stat` 系统调用是 Unix-like 操作系统中一个非常基础且重要的功能，它用于获取文件或文件系统对象（如目录、符号链接等）的**元数据（metadata）信息**。它不会读取文件的实际内容，只会提供关于文件本身的各种属性。
+
+---
+
+### `stat` 系统调用的作用
+
+`stat` 提供的信息对于程序理解和处理文件至关重要，例如：
+
+- **文件类型：** 是普通文件、目录、符号链接、字符设备、块设备、FIFO 管道还是 Socket？
+    
+- **文件大小：** 文件的字节数。
+    
+- **文件权限：** 文件的读、写、执行权限，以及所有者、组和其他用户的权限位。
+    
+- **所有者和组ID：** 文件的用户ID（UID）和组ID（GID）。
+    
+- **时间戳：**
+    
+    - **最后访问时间 (atime)：** 文件最后一次被读取的时间。
+        
+    - **最后修改时间 (mtime)：** 文件内容最后一次被修改的时间。
+        
+    - **最后状态改变时间 (ctime)：** 文件的元数据（例如权限、所有者、链接数）最后一次被修改的时间。
+        
+- **硬链接数：** 指向该文件的硬链接数量。
+    
+- **设备ID：** 对于设备文件，指示设备的主/次ID。
+    
+- **文件系统ID：** 文件所在的文件系统的ID。
+    
+- **块大小和块数：** 文件系统I/O的优化块大小，以及文件实际占用的块数。
+    
+
+---
+
+### `stat` 系列函数
+
+在 POSIX-compliant 系统中，通常有三个主要的 `stat` 系列函数，它们的功能类似但处理文件路径的方式略有不同：
+
+1. **`stat(const char *pathname, struct stat *buf)`**
+    
+    - 这是最常用的一个。它通过 `pathname` 参数指定的文件路径来获取文件的元数据。如果 `pathname` 是一个符号链接，它会**解引用（dereference）**符号链接，返回符号链接所指向的实际文件的元数据。
+        
+2. **`fstat(int fd, struct stat *buf)`**
+    
+    - 这个函数通过文件描述符 `fd` 来获取文件的元数据。当你已经打开了一个文件并获得了它的文件描述符时，可以使用 `fstat` 来获取其元数据，而无需再次提供文件路径。
+        
+3. **`lstat(const char *pathname, struct stat *buf)`**
+    
+    - 与 `stat` 类似，也通过 `pathname` 指定文件路径。但关键区别在于，如果 `pathname` 是一个符号链接，`lstat` **不会解引用**它。它会返回符号链接本身（而不是它指向的文件）的元数据。这对于需要处理符号链接本身而不是它指向的目标的程序非常有用。
+        
+
+---
+
+### `struct stat` 结构体
+
+这三个函数都会将获取到的元数据填充到一个 `struct stat` 类型的结构体中。这个结构体的定义可以在 `<sys/stat.h>` 头文件中找到，其具体成员可能因系统而异，但通常包含上述提到的那些属性。
+
+**示例（简化的 `struct stat` 结构体，实际可能更复杂）：**
+
+```c
+struct stat {
+    dev_t     st_dev;     // ID of device containing file
+    ino_t     st_ino;     // Inode number
+    mode_t    st_mode;    // File type and mode (permissions)
+    nlink_t   st_nlink;   // Number of hard links
+    uid_t     st_uid;     // User ID of owner
+    gid_t     st_gid;     // Group ID of owner
+    dev_t     st_rdev;    // Device ID (if special file)
+    off_t     st_size;    // Total size, in bytes
+    blksize_t st_blksize; // Blocksize for filesystem I/O
+    blkcnt_t  st_blocks;  // Number of 512B blocks allocated
+    time_t    st_atime;   // Time of last access
+    time_t    st_mtime;   // Time of last modification
+    time_t    st_ctime;   // Time of last status change
+};
+```
+
+---
+
+### 示例用法（C 语言）
+
+下面是一个简单的 C 语言示例，演示如何使用 `stat` 函数获取文件信息：
+
+```c
+#include <stdio.h>
+#include <sys/stat.h> // For stat() and struct stat
+#include <time.h>     // For ctime()
+
+int main() {
+    struct stat fileStat;
+    const char *filename = "example.txt"; // 假设有一个名为 example.txt 的文件
+
+    // 尝试获取文件信息
+    if (stat(filename, &fileStat) < 0) {
+        perror("Error stat-ing file"); // 如果失败，打印错误信息
+        return 1;
+    }
+
+    printf("--- File Info for %s ---\n", filename);
+    printf("File size: \t\t%ld bytes\n", fileStat.st_size);
+    printf("Number of links: \t%ld\n", (long)fileStat.st_nlink);
+    printf("File inode: \t\t%ld\n", (long)fileStat.st_ino);
+    printf("Permissions: \t\t");
+    printf( (S_ISDIR(fileStat.st_mode)) ? "d" : "-");
+    printf( (fileStat.st_mode & S_IRUSR) ? "r" : "-");
+    printf( (fileStat.st_mode & S_IWUSR) ? "w" : "-");
+    printf( (fileStat.st_mode & S_IXUSR) ? "x" : "-");
+    printf( (fileStat.st_mode & S_IRGRP) ? "r" : "-");
+    printf( (fileStat.st_mode & S_IWGRP) ? "w" : "-");
+    printf( (fileStat.st_mode & S_IXGRP) ? "x" : "-");
+    printf( (fileStat.st_mode & S_IROTH) ? "r" : "-");
+    printf( (fileStat.st_mode & S_IWOTH) ? "w" : "-");
+    printf( (fileStat.st_mode & S_IXOTH) ? "x" : "-");
+    printf("\n");
+
+    printf("Last access time: \t%s", ctime(&fileStat.st_atime));
+    printf("Last modify time: \t%s", ctime(&fileStat.st_mtime));
+    printf("Last status change: \t%s", ctime(&fileStat.st_ctime));
+
+    return 0;
+}
+```
+
+编译并运行这个程序，它会打印出 `example.txt` 文件的各种元数据信息。
+
+---
+
+`stat` 系统调用是许多高级文件操作的基础，例如 `ls -l` 命令就是通过 `stat` 来获取并显示文件详细信息的。理解它的作用对于进行系统编程和文件管理至关重要。

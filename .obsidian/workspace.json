@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "56afe2486da19533",
+        "id": "ce423f37e3d7d024",
         "type": "tabs",
         "children": [
           {
-            "id": "6a2bbcadc456b561",
+            "id": "482f5593f610281b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Library/ThingsBoard/ThingsBoard architecture.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "ThingsBoard architecture"
+              "title": "新标签页"
             }
           }
         ]
@@ -54,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sed",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,12 +70,12 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 406.5110321044922,
-    "collapsed": true
+    "width": 279.5110321044922
   },
   "right": {
     "id": "1aaefe1a03615f71",
@@ -144,13 +139,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Library/ThingsBoard/ThingsBoard architecture.md",
+                "file": "组会/论文 intro.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "ThingsBoard architecture 的大纲"
+              "title": "论文 intro 的大纲"
             }
           },
           {
@@ -184,54 +179,53 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "6a2bbcadc456b561",
+  "active": "482f5593f610281b",
   "lastOpenFiles": [
     "Library/GDB/gdb-cheat-sheet.pdf",
-    "Library/ThingsBoard/Getting Started with ThingsBoard.md",
-    "Library/ThingsBoard/ThingsBoard architecture.md",
-    "Library/Introduction to Cloud Infrastructure Technologies/1 Introduction to Cloud Computing and Technologies.md",
-    "Library/K8s/edx 课程/13 ConfigMaps and Secrets.md",
-    "Library/K8s/edx 课程/12 Kubernetes Volume Management.md",
-    "Library/K8s/edx 课程/11 Deploying a Stand-Alone Application.md",
-    "Library/K8s/edx 课程/10 Services.md",
-    "Library/K8s/edx 课程/9 Authentication.md",
-    "Library/K8s/edx 课程/7 Accessing Minikube.md",
-    "Library/K8s/edx 课程/4 k8s Architecture.md",
-    "Library/K8s/edx 课程/2 Container Orchestration.md",
-    "Library/K8s/edx 课程/1 From Monolith to Microservices.md",
-    "Library/K8s/hard-way/2 学习笔记.md",
-    "Library/K8s/hard-way/0 机器配置同一个网络.md",
-    "Library/K8s/What happens when ... Kubernetes edition!.md",
-    "Library/K8s/Understanding Kubernetes Architecture.md",
-    "Library/K8s/Using kubectl to Create a Deployment.md",
-    "Library/K8s/Updating Configuration via a ConfigMap.md",
-    "Library/K8s/Service Discovery.md",
-    "Library/K8s/Services, Load Balancing, and Networking.md",
-    "Library/K8s/RoadMap.md",
-    "Library/K8s/OpenStack网络实现.md",
-    "Library/K8s/Pods.md",
-    "Library/K8s/leader-election.md",
-    "Library/K8s/Kubeconfig File Explained (Examples, Usage and Configuration).md",
-    "Library/K8s/client-go 源码分析/images/Pasted image 20250627094636.png",
-    "Library/K8s/client-go 源码分析/images/Pasted image 20250626222005.png",
+    "Spike-Based Synaptic Plasticity in Silicon.md",
+    "论文大纲：When Spiking Neuron Models Meet On-device Sequential Recommendation with Multi-modal Information.md",
+    "论文大纲：Cost-Effective On-Device Sequential Recommendation with Spiking Neural Networks.md",
+    "Library/Git/git pull.md",
+    "Library/Git/images/Pasted image 20250717232149.png",
+    "Library/Git/images/Pasted image 20250717232115.png",
+    "Library/Git/images/Pasted image 20250717232052.png",
+    "Library/Git/git fetch 多参数.md",
+    "Library/Git/images/Pasted image 20250717231157.png",
+    "Library/Git/images/Pasted image 20250717231056.png",
+    "Library/Git/images/Pasted image 20250717231010.png",
+    "Library/Git/images/Pasted image 20250717230739.png",
+    "Library/Git/git rebase.md",
+    "Library/Git/git cherry-pick.md",
+    "Library/Git/git branch.md",
+    "Library/Git/git reset.md",
+    "Library/Git/git revert.md",
+    "Library/Git/images/Pasted image 20250717224555.png",
+    "Library/Git/detach head.md",
+    "Library/Git/origin main.md",
+    "Library/Git/2.1 Git 基础 - 获取 Git 仓库.md",
+    "Library/K8s/cAdvisor.md",
+    "Library/OS/man文档/stat 2.md",
+    "Library/Git/git 傻瓜式教学.md",
+    "Library/Git/工作流程.md",
+    "Library/Git/2.3 查看提交历史.md",
+    "Library/Git/images/Pasted image 20250716224136.png",
+    "组会/2025-7-16.md",
+    "组会/2025-7-9.md",
+    "组会/论文 intro.md",
+    "组会/2025-3-21.md",
+    "Library/K8s/CNI.md",
+    "Library/K8s/kubelet 感知 pod.md",
+    "Library/K8s/metrics.md",
+    "Library/Design Data-Intensive/images/Pasted image 20250712131943.png",
+    "Library/K8s in action/images",
+    "Library/K8s in action",
+    "Library/WSL",
+    "Library/Design Data-Intensive/images",
+    "Library/Design Data-Intensive",
     "Library/K8s/client-go 源码分析/images",
     "Library/K8s/client-go 源码分析",
-    "Library/Docker/images/Pasted image 20250219164118.png",
-    "Library/Docker/images/Pasted image 20250106182630.png",
-    "Articles/images/Pasted image 20250625203630.png",
-    "Articles/images/Pasted image 20250625200510.png",
-    "Articles/images/Pasted image 20250625194746.png",
-    "组会/images/Pasted image 20250625090847.png",
-    "组会/images/Pasted image 20250625090846.png",
-    "Library/K8s/images/Pasted image 20250624152409.png",
     "Library/beego/images",
     "Library/beego",
-    "Library/NVIDIA NIM",
-    "Library/K8s/hard-way/images",
-    "Library/K8s/hard-way/未命名",
-    "Library/K8s/hard-way",
-    "Library/GRPC/images",
-    "Library/GRPC",
     "Library/Golang/面经/华为面试.canvas",
     "Library/OS/XV6/未命名.canvas"
   ]
